@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSCategotias",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSPrestaciones",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSPrevision",
+      "title" : "CS Prevision",
+      "description" : "Codigos de la previsión del paciente"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSServicios",
+      "title" : "CSServicios",
+      "description" : "Aca estan los codigos del servicio del prestador que dara la cita"
+    }
+  ]
+}

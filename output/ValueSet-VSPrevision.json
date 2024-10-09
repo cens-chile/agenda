@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSPrevision",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSPrevision</b></p><a name=\"VSPrevision\"> </a><a name=\"hcVSPrevision\"> </a><a name=\"VSPrevision-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSPrevision.html\"><code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision</code></a></li></ul></div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrevision",
+  "version" : "0.1.0",
+  "name" : "VSPrevision",
+  "title" : "VS Prevision",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-09T15:09:25-03:00",
+  "publisher" : "Unidad de Interoperabilidad - MINSAL",
+  "contact" : [{
+    "name" : "Unidad de Interoperabilidad - MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://interoperabilidad.minsal.cl"
+    }]
+  }],
+  "description" : "Previsión del paciente",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision"
+    }]
+  }
+}

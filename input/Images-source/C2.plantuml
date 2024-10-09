@@ -1,0 +1,10 @@
+@startuml
+
+group PUT Acepto/Rechazo de hora
+Servidor -> Paciente : PUT
+activate Paciente
+Paciente -> Paciente : Acepto/Rechazo
+return 
+end
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+group POST Solicitud de hora
+Paciente -> Servidor : POST
+activate Servidor
+Servidor -> Servidor : Validación
+return 
+end
+
+@enduml

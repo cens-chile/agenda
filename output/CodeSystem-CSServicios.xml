@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSServicios"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSServicios</b></p><a name="CSServicios"> </a><a name="hcCSServicios"> </a><a name="CSServicios-es-CL"> </a><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSServicios-1"> </a></td><td>Información y asistencia sobre adopción y atención permanente</td></tr><tr><td style="white-space:nowrap">2<a name="CSServicios-2"> </a></td><td>Evaluación de atención a personas mayores</td></tr><tr><td style="white-space:nowrap">3<a name="CSServicios-3"> </a></td><td>Información y derivaciones para el cuidado de personas mayores</td></tr><tr><td style="white-space:nowrap">4<a name="CSServicios-4"> </a></td><td>Atención residencial para ancianos</td></tr><tr><td style="white-space:nowrap">5<a name="CSServicios-5"> </a></td><td>Gestión de casos para personas mayores</td></tr><tr><td style="white-space:nowrap">6<a name="CSServicios-6"> </a></td><td>Comidas a domicilio (Meals On Wheels)</td></tr><tr><td style="white-space:nowrap">7<a name="CSServicios-7"> </a></td><td>Visita amistosa</td></tr><tr><td style="white-space:nowrap">8<a name="CSServicios-8"> </a></td><td>Asistencia para el cuidado del hogar/limpieza del hogar</td></tr><tr><td style="white-space:nowrap">9<a name="CSServicios-9"> </a></td><td>Mantenimiento y reparación del hogar</td></tr><tr><td style="white-space:nowrap">10<a name="CSServicios-10"> </a></td><td>Alarmas/Alertas Personales</td></tr></table></div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios"/>
+  <version value="0.1.0"/>
+  <name value="CSServicios"/>
+  <title value="CSServicios"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-09T15:09:25-03:00"/>
+  <publisher value="Unidad de Interoperabilidad - MINSAL"/>
+  <contact>
+    <name value="Unidad de Interoperabilidad - MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://interoperabilidad.minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Aca estan los codigos del servicio del prestador que dara la cita"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="1"/>
+    <display value="Información y asistencia sobre adopción y atención permanente"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Evaluación de atención a personas mayores"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Información y derivaciones para el cuidado de personas mayores"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Atención residencial para ancianos"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Gestión de casos para personas mayores"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Comidas a domicilio (Meals On Wheels)"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Visita amistosa"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Asistencia para el cuidado del hogar/limpieza del hogar"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Mantenimiento y reparación del hogar"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Alarmas/Alertas Personales"/>
+  </concept>
+</CodeSystem>

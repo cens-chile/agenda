@@ -1,0 +1,10 @@
+@startuml
+
+group GET Leer la hora
+Paciente -> Servidor : GET 
+activate Servidor
+Servidor -> Servidor : Verificación
+return 
+end
+
+@enduml

@@ -1,0 +1,120 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/participantrequired",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRequired",
+      "title" : "ParticipantRequired",
+      "description" : "Is the Participant required to attend the appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.4.489"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-participantrequired.html" : "ParticipantRequired"
+    },
+    {
+      "url" : "http://hl7.org/fhir/participationstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipationStatus",
+      "title" : "ParticipationStatus",
+      "description" : "The Participation status of an appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.4.487"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSCategotias",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones",
+      "uses" : {
+      },
+      "ValueSet-VSCategorias.html" : "VS Prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSPrestaciones",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones",
+      "uses" : {
+      },
+      "ValueSet-VSPrestaciones.html" : "VS Prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSPrevision",
+      "title" : "CS Prevision",
+      "description" : "Codigos de la previsión del paciente",
+      "uses" : {
+      },
+      "ValueSet-VSPrevision.html" : "VS Prevision"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSServicios",
+      "title" : "CSServicios",
+      "description" : "Aca estan los codigos del servicio del prestador que dara la cita",
+      "uses" : {
+      },
+      "ValueSet-VSServicios.html" : "VS SERVICIOS"
+    }
+  ]
+}

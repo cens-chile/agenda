@@ -1,0 +1,10 @@
+@startuml
+
+group PUT Reagendamiento de la hora
+Paciente -> Servidor : PUT 
+activate Servidor
+Servidor -> Servidor : Actualización
+return
+end
+
+@enduml

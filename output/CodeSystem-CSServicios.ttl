@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSServicios"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSServicios</b></p><a name=\"CSServicios\"> </a><a name=\"hcCSServicios\"> </a><a name=\"CSServicios-es-CL\"> </a><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSServicios-1\"> </a></td><td>Información y asistencia sobre adopción y atención permanente</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSServicios-2\"> </a></td><td>Evaluación de atención a personas mayores</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSServicios-3\"> </a></td><td>Información y derivaciones para el cuidado de personas mayores</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSServicios-4\"> </a></td><td>Atención residencial para ancianos</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSServicios-5\"> </a></td><td>Gestión de casos para personas mayores</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSServicios-6\"> </a></td><td>Comidas a domicilio (Meals On Wheels)</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSServicios-7\"> </a></td><td>Visita amistosa</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSServicios-8\"> </a></td><td>Asistencia para el cuidado del hogar/limpieza del hogar</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSServicios-9\"> </a></td><td>Mantenimiento y reparación del hogar</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSServicios-10\"> </a></td><td>Alarmas/Alertas Personales</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSServicios"] ; # 
+  fhir:title [ fhir:v "CSServicios"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-09T15:09:25-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Aca estan los codigos del servicio del prestador que dara la cita"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Información y asistencia sobre adopción y atención permanente" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Evaluación de atención a personas mayores" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Información y derivaciones para el cuidado de personas mayores" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Atención residencial para ancianos" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Gestión de casos para personas mayores" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Comidas a domicilio (Meals On Wheels)" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Visita amistosa" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Asistencia para el cuidado del hogar/limpieza del hogar" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Mantenimiento y reparación del hogar" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Alarmas/Alertas Personales" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

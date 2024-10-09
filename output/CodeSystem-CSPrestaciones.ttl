@@ -1,0 +1,398 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSPrestaciones"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSPrestaciones</b></p><a name=\"CSPrestaciones\"> </a><a name=\"hcCSPrestaciones\"> </a><a name=\"CSPrestaciones-es-CL\"> </a><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSPrestaciones-1\"> </a></td><td>OTRAS CONSULTAS (ABREVIADAS)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSPrestaciones-2\"> </a></td><td>APLICACIÓN DE SELLANTES</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSPrestaciones-3\"> </a></td><td>APLICACIÓN DE TEPSI</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSPrestaciones-4\"> </a></td><td>APLICACIÓN EEDP</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSPrestaciones-5\"> </a></td><td>ATENCIÓN DE PODOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSPrestaciones-6\"> </a></td><td>ATENCIÓN EN SALA DE ESTIMULACIÓN</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSPrestaciones-7\"> </a></td><td>ATENCIÓN FARMACEÚTICA</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSPrestaciones-8\"> </a></td><td>ATENCIÓN POR SALUD DIGITAL</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSPrestaciones-9\"> </a></td><td>ATENCIÓN PROFESIONAL POR VIDEOLLAMADA</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSPrestaciones-10\"> </a></td><td>CLINICA O CONSULTA DE LACTANCIA MATERNA</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"CSPrestaciones-11\"> </a></td><td>CONSEJERIA FAMILIAR</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"CSPrestaciones-12\"> </a></td><td>CONSEJERIA INDIVIDUAL</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"CSPrestaciones-13\"> </a></td><td>CONSEJERIA LACTANCIA MATERNA</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"CSPrestaciones-14\"> </a></td><td>CONSULTA ALTO RIESGO OBSTÉTRICO</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"CSPrestaciones-15\"> </a></td><td>CONSULTA CIRUGIA MENOR (PROCEDIMIENTO)</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"CSPrestaciones-16\"> </a></td><td>CONSULTA DE ENFERMERIA</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"CSPrestaciones-17\"> </a></td><td>CONSULTA DE ESPECIALIDAD (ODONTÓLOGO, OTORRINO, OFTALMOLOGO, OTROS)</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"CSPrestaciones-18\"> </a></td><td>CONSULTA DE MEDICINA INDÍGENA</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"CSPrestaciones-19\"> </a></td><td>CONSULTA DE MORBILIDAD</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"CSPrestaciones-20\"> </a></td><td>CONSULTA DE TERAPEUTA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"CSPrestaciones-21\"> </a></td><td>CONSULTA DE URGENCIA</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"CSPrestaciones-22\"> </a></td><td>CONSULTA FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"CSPrestaciones-23\"> </a></td><td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA GRUPAL</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"CSPrestaciones-24\"> </a></td><td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA INDIVIDUAL</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"CSPrestaciones-25\"> </a></td><td>CONSULTA GINECOLÓGICA</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"CSPrestaciones-26\"> </a></td><td>CONSULTA INTEGRAL TMO</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"CSPrestaciones-27\"> </a></td><td>CONSULTA MATRON/A</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"CSPrestaciones-28\"> </a></td><td>CONSULTA NUTRICIONAL</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"CSPrestaciones-29\"> </a></td><td>CONSULTA ODONTOLOGICA MORBILIDAD</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"CSPrestaciones-30\"> </a></td><td>CONSULTA ODONTOLOGICA TRATAMIENTO</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"CSPrestaciones-31\"> </a></td><td>CONSULTA PACIENTE AGUDO ERA</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"CSPrestaciones-32\"> </a></td><td>CONSULTA PACIENTE AGUDO IRA</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"CSPrestaciones-33\"> </a></td><td>CONSULTA PREVIA O POSTERIOR A CIRUGÍA MENOR</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"CSPrestaciones-34\"> </a></td><td>CONSULTA PSICOLOGÍCA</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"CSPrestaciones-35\"> </a></td><td>CONSULTA REHABILITACION</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"CSPrestaciones-36\"> </a></td><td>CONSULTA SOCIAL</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"CSPrestaciones-37\"> </a></td><td>CONSULTA TMO OTORRINO</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"CSPrestaciones-38\"> </a></td><td>CONSULTA VICIO DE REFRACCIÓN</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"CSPrestaciones-39\"> </a></td><td>CONSULTORÍA DE SALUD MENTAL</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"CSPrestaciones-40\"> </a></td><td>CONTACTO DE PACIENTE POR VÍA TELEFÓNICA</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"CSPrestaciones-41\"> </a></td><td>CONTROL CERO</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"CSPrestaciones-42\"> </a></td><td>CONTROL CLIMATERIO</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"CSPrestaciones-43\"> </a></td><td>CONTROL CRONICO</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"CSPrestaciones-44\"> </a></td><td>CONTROL CRONICO ERA</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"CSPrestaciones-45\"> </a></td><td>CONTROL CRONICO IRA</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"CSPrestaciones-46\"> </a></td><td>CONTROL DE SALUD INTEGRAL DEL ADOLESCENTE</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"CSPrestaciones-47\"> </a></td><td>CONTROL DE SALUD MENTAL</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"CSPrestaciones-48\"> </a></td><td>CONTROL DE SEGUIMIENTO EMPAM</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"CSPrestaciones-49\"> </a></td><td>CONTROL DIADA</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"CSPrestaciones-50\"> </a></td><td>CONTROL GINECOLOGICO</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"CSPrestaciones-51\"> </a></td><td>CONTROL INTEGRAL MULTIMORBILIDAD</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"CSPrestaciones-52\"> </a></td><td>CONTROL NIÑO SANO</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"CSPrestaciones-53\"> </a></td><td>CONTROL PACIENTE AGUDO ERA</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"CSPrestaciones-54\"> </a></td><td>CONTROL PACIENTE AGUDO IRA</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"CSPrestaciones-55\"> </a></td><td>CONTROL PRECONCEPCIONAL</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"CSPrestaciones-56\"> </a></td><td>CONTROL PRENATAL</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"CSPrestaciones-57\"> </a></td><td>CONTROL PUERPERA</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"CSPrestaciones-58\"> </a></td><td>CONTROL REGULACIÓN FERTILIDAD</td></tr><tr><td style=\"white-space:nowrap\">59<a name=\"CSPrestaciones-59\"> </a></td><td>CURACIÓN AVANZADA</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"CSPrestaciones-60\"> </a></td><td>CURACIONES SIMPLES</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"CSPrestaciones-61\"> </a></td><td>EDUCACIÓN FARMACÉUTICA</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"CSPrestaciones-62\"> </a></td><td>EDUCACIÓN GRUPAL</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"CSPrestaciones-63\"> </a></td><td>EDUCACION INDIVIDUAL SALUD CARDIOVASCULAR</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"CSPrestaciones-64\"> </a></td><td>ELABORACIÓN DE INFORMES A TRIBUNALES</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"CSPrestaciones-65\"> </a></td><td>ENTREVISTA FAMILIAR (Aplicación Tarjetón Familiar)</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"CSPrestaciones-66\"> </a></td><td>ESPIROMETRIA</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"CSPrestaciones-67\"> </a></td><td>ESTUDIOS DE FAMILIA</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"CSPrestaciones-68\"> </a></td><td>EVALUACIÓN DEL PIE DIABÉTICO</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"CSPrestaciones-69\"> </a></td><td>EVALUACION DISCAPACIDAD (IVADEC)</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"CSPrestaciones-70\"> </a></td><td>EVALUACIÓN INICIAL DE REHABILITACIÓN</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"CSPrestaciones-71\"> </a></td><td>EVALUACION INTERMEDIA (REHABILITACIÓN)</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"CSPrestaciones-72\"> </a></td><td>EXAMEN MEDICINA PREVENTIVA ADULTO (EMPA)</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"CSPrestaciones-73\"> </a></td><td>FLUORACIÓN TOPICA</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"CSPrestaciones-74\"> </a></td><td>FLUORACIÓN TOPICA</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"CSPrestaciones-75\"> </a></td><td>INGRESO A SALA DE ESTIMULACIÓN</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"CSPrestaciones-76\"> </a></td><td>INGRESO CLIMATERIO</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"CSPrestaciones-77\"> </a></td><td>INGRESO CRONICO</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"CSPrestaciones-78\"> </a></td><td>INGRESO ERA</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"CSPrestaciones-79\"> </a></td><td>INGRESO FONOAUDIOLOGÍA</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"CSPrestaciones-80\"> </a></td><td>INGRESO IRA</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"CSPrestaciones-81\"> </a></td><td>INGRESO MULTIMORBILIDAD</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"CSPrestaciones-82\"> </a></td><td>INGRESO PMAMA</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"CSPrestaciones-83\"> </a></td><td>INGRESO PRENATAL</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"CSPrestaciones-84\"> </a></td><td>INGRESO PROGRAMA CERO</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"CSPrestaciones-85\"> </a></td><td>INGRESO PROGRAMA SALUD MENTAL</td></tr><tr><td style=\"white-space:nowrap\">86<a name=\"CSPrestaciones-86\"> </a></td><td>INGRESO REGULACIÓN FERTILIDAD</td></tr><tr><td style=\"white-space:nowrap\">87<a name=\"CSPrestaciones-87\"> </a></td><td>INTERVENCIÓN EN CRISIS</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"CSPrestaciones-88\"> </a></td><td>INTERVENCION PSICOSOCIAL DE GRUPOS</td></tr><tr><td style=\"white-space:nowrap\">89<a name=\"CSPrestaciones-89\"> </a></td><td>INTERVENCION PSICOSOCIAL GRUPAL</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"CSPrestaciones-90\"> </a></td><td>OTRAS CONSULTAS TMO</td></tr><tr><td style=\"white-space:nowrap\">91<a name=\"CSPrestaciones-91\"> </a></td><td>PAP</td></tr><tr><td style=\"white-space:nowrap\">92<a name=\"CSPrestaciones-92\"> </a></td><td>PESQUISA HTA</td></tr><tr><td style=\"white-space:nowrap\">93<a name=\"CSPrestaciones-93\"> </a></td><td>PROCEDIMIENTOS</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"CSPrestaciones-94\"> </a></td><td>PROGRAMA GES ODONTOLOGICO</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"CSPrestaciones-95\"> </a></td><td>PROGRAMA MEJORAMIENTO DEL ACCESO A LA ATENCIÓN ODONTOLÓGICA</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"CSPrestaciones-96\"> </a></td><td>PROGRAMA ODONTOLÓGICO INTEGRAL</td></tr><tr><td style=\"white-space:nowrap\">97<a name=\"CSPrestaciones-97\"> </a></td><td>PULIDO CORONARIO Y DESTARTRAJE SUPRAGINGIVAL</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"CSPrestaciones-98\"> </a></td><td>REALIZACIÓN EMPAM</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"CSPrestaciones-99\"> </a></td><td>SEGUIMIENTO DE CASOS</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"CSPrestaciones-100\"> </a></td><td>SEGUIMIENTO DE TEPSI</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"CSPrestaciones-101\"> </a></td><td>SEGUMIENTO A DISTANCIA MULTIMORBILIDAD</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"CSPrestaciones-102\"> </a></td><td>SESION DE REHABILITACION INTEGRAL</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"CSPrestaciones-103\"> </a></td><td>SESION DE REHABILITACION PULMONAR</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"CSPrestaciones-104\"> </a></td><td>TALLER EN EDUCACIÓN ESPECIAL EN ADULTO MAYOR</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"CSPrestaciones-105\"> </a></td><td>TALLER GRUPAL</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"CSPrestaciones-106\"> </a></td><td>TALLER GRUPAL PMAMA</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"CSPrestaciones-107\"> </a></td><td>TAMIZAJE PARA EVALUAR RIESGO DE CONSUMO DE ALCOHOL, TABACO Y OTRAS DROGAS</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"CSPrestaciones-108\"> </a></td><td>TELECLIMATERIO</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"CSPrestaciones-109\"> </a></td><td>TEST DE MARCHA</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"CSPrestaciones-110\"> </a></td><td>TEST DE PROVOCACIÓN CON EJERCICIO</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"CSPrestaciones-111\"> </a></td><td>TOMA DE ECOGRAFIA</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"CSPrestaciones-112\"> </a></td><td>TOMA DE ELECTROCARDIOGRAMA</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"CSPrestaciones-113\"> </a></td><td>TOMA DE ESPIROMETRIA</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"CSPrestaciones-114\"> </a></td><td>TOMA DE MAMOGRAFIA</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"CSPrestaciones-115\"> </a></td><td>TOMA DE MUESTRAS</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"CSPrestaciones-116\"> </a></td><td>TOMA DE RADIOGRAFIA</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"CSPrestaciones-117\"> </a></td><td>VISITA DOMICILIARIA INTEGRAL</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"CSPrestaciones-118\"> </a></td><td>VISITAS CON FINES DE TRATAMIENTOS Y/O PROCEDIMIENTOS EN DOMICILIO</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSPrestaciones"] ; # 
+  fhir:title [ fhir:v "CS Prestaciones"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-09T15:09:25-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codigos de las prestaciones"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "118"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "OTRAS CONSULTAS (ABREVIADAS)" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "APLICACIÓN DE SELLANTES" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "APLICACIÓN DE TEPSI" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "APLICACIÓN EEDP" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "ATENCIÓN DE PODOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "ATENCIÓN EN SALA DE ESTIMULACIÓN" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "ATENCIÓN FARMACEÚTICA" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "ATENCIÓN POR SALUD DIGITAL" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "ATENCIÓN PROFESIONAL POR VIDEOLLAMADA" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "CLINICA O CONSULTA DE LACTANCIA MATERNA" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "CONSEJERIA FAMILIAR" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "CONSEJERIA INDIVIDUAL" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "CONSEJERIA LACTANCIA MATERNA" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "CONSULTA ALTO RIESGO OBSTÉTRICO" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "CONSULTA CIRUGIA MENOR (PROCEDIMIENTO)" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "CONSULTA DE ENFERMERIA" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "CONSULTA DE ESPECIALIDAD (ODONTÓLOGO, OTORRINO, OFTALMOLOGO, OTROS)" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "CONSULTA DE MEDICINA INDÍGENA" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "CONSULTA DE MORBILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "CONSULTA DE TERAPEUTA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "CONSULTA DE URGENCIA" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "CONSULTA FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA GRUPAL" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA INDIVIDUAL" ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "CONSULTA GINECOLÓGICA" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "CONSULTA INTEGRAL TMO" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "CONSULTA MATRON/A" ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "CONSULTA NUTRICIONAL" ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "CONSULTA ODONTOLOGICA MORBILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "CONSULTA ODONTOLOGICA TRATAMIENTO" ]
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "CONSULTA PACIENTE AGUDO ERA" ]
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "CONSULTA PACIENTE AGUDO IRA" ]
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "CONSULTA PREVIA O POSTERIOR A CIRUGÍA MENOR" ]
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "CONSULTA PSICOLOGÍCA" ]
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "CONSULTA REHABILITACION" ]
+  ] [
+     fhir:code [ fhir:v "36" ] ;
+     fhir:display [ fhir:v "CONSULTA SOCIAL" ]
+  ] [
+     fhir:code [ fhir:v "37" ] ;
+     fhir:display [ fhir:v "CONSULTA TMO OTORRINO" ]
+  ] [
+     fhir:code [ fhir:v "38" ] ;
+     fhir:display [ fhir:v "CONSULTA VICIO DE REFRACCIÓN" ]
+  ] [
+     fhir:code [ fhir:v "39" ] ;
+     fhir:display [ fhir:v "CONSULTORÍA DE SALUD MENTAL" ]
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "CONTACTO DE PACIENTE POR VÍA TELEFÓNICA" ]
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "CONTROL CERO" ]
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "CONTROL CLIMATERIO" ]
+  ] [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "CONTROL CRONICO" ]
+  ] [
+     fhir:code [ fhir:v "44" ] ;
+     fhir:display [ fhir:v "CONTROL CRONICO ERA" ]
+  ] [
+     fhir:code [ fhir:v "45" ] ;
+     fhir:display [ fhir:v "CONTROL CRONICO IRA" ]
+  ] [
+     fhir:code [ fhir:v "46" ] ;
+     fhir:display [ fhir:v "CONTROL DE SALUD INTEGRAL DEL ADOLESCENTE" ]
+  ] [
+     fhir:code [ fhir:v "47" ] ;
+     fhir:display [ fhir:v "CONTROL DE SALUD MENTAL" ]
+  ] [
+     fhir:code [ fhir:v "48" ] ;
+     fhir:display [ fhir:v "CONTROL DE SEGUIMIENTO EMPAM" ]
+  ] [
+     fhir:code [ fhir:v "49" ] ;
+     fhir:display [ fhir:v "CONTROL DIADA" ]
+  ] [
+     fhir:code [ fhir:v "50" ] ;
+     fhir:display [ fhir:v "CONTROL GINECOLOGICO" ]
+  ] [
+     fhir:code [ fhir:v "51" ] ;
+     fhir:display [ fhir:v "CONTROL INTEGRAL MULTIMORBILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "52" ] ;
+     fhir:display [ fhir:v "CONTROL NIÑO SANO" ]
+  ] [
+     fhir:code [ fhir:v "53" ] ;
+     fhir:display [ fhir:v "CONTROL PACIENTE AGUDO ERA" ]
+  ] [
+     fhir:code [ fhir:v "54" ] ;
+     fhir:display [ fhir:v "CONTROL PACIENTE AGUDO IRA" ]
+  ] [
+     fhir:code [ fhir:v "55" ] ;
+     fhir:display [ fhir:v "CONTROL PRECONCEPCIONAL" ]
+  ] [
+     fhir:code [ fhir:v "56" ] ;
+     fhir:display [ fhir:v "CONTROL PRENATAL" ]
+  ] [
+     fhir:code [ fhir:v "57" ] ;
+     fhir:display [ fhir:v "CONTROL PUERPERA" ]
+  ] [
+     fhir:code [ fhir:v "58" ] ;
+     fhir:display [ fhir:v "CONTROL REGULACIÓN FERTILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "59" ] ;
+     fhir:display [ fhir:v "CURACIÓN AVANZADA" ]
+  ] [
+     fhir:code [ fhir:v "60" ] ;
+     fhir:display [ fhir:v "CURACIONES SIMPLES" ]
+  ] [
+     fhir:code [ fhir:v "61" ] ;
+     fhir:display [ fhir:v "EDUCACIÓN FARMACÉUTICA" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "EDUCACIÓN GRUPAL" ]
+  ] [
+     fhir:code [ fhir:v "63" ] ;
+     fhir:display [ fhir:v "EDUCACION INDIVIDUAL SALUD CARDIOVASCULAR" ]
+  ] [
+     fhir:code [ fhir:v "64" ] ;
+     fhir:display [ fhir:v "ELABORACIÓN DE INFORMES A TRIBUNALES" ]
+  ] [
+     fhir:code [ fhir:v "65" ] ;
+     fhir:display [ fhir:v "ENTREVISTA FAMILIAR (Aplicación Tarjetón Familiar)" ]
+  ] [
+     fhir:code [ fhir:v "66" ] ;
+     fhir:display [ fhir:v "ESPIROMETRIA" ]
+  ] [
+     fhir:code [ fhir:v "67" ] ;
+     fhir:display [ fhir:v "ESTUDIOS DE FAMILIA" ]
+  ] [
+     fhir:code [ fhir:v "68" ] ;
+     fhir:display [ fhir:v "EVALUACIÓN DEL PIE DIABÉTICO" ]
+  ] [
+     fhir:code [ fhir:v "69" ] ;
+     fhir:display [ fhir:v "EVALUACION DISCAPACIDAD (IVADEC)" ]
+  ] [
+     fhir:code [ fhir:v "70" ] ;
+     fhir:display [ fhir:v "EVALUACIÓN INICIAL DE REHABILITACIÓN" ]
+  ] [
+     fhir:code [ fhir:v "71" ] ;
+     fhir:display [ fhir:v "EVALUACION INTERMEDIA (REHABILITACIÓN)" ]
+  ] [
+     fhir:code [ fhir:v "72" ] ;
+     fhir:display [ fhir:v "EXAMEN MEDICINA PREVENTIVA ADULTO (EMPA)" ]
+  ] [
+     fhir:code [ fhir:v "73" ] ;
+     fhir:display [ fhir:v "FLUORACIÓN TOPICA" ]
+  ] [
+     fhir:code [ fhir:v "74" ] ;
+     fhir:display [ fhir:v "FLUORACIÓN TOPICA" ]
+  ] [
+     fhir:code [ fhir:v "75" ] ;
+     fhir:display [ fhir:v "INGRESO A SALA DE ESTIMULACIÓN" ]
+  ] [
+     fhir:code [ fhir:v "76" ] ;
+     fhir:display [ fhir:v "INGRESO CLIMATERIO" ]
+  ] [
+     fhir:code [ fhir:v "77" ] ;
+     fhir:display [ fhir:v "INGRESO CRONICO" ]
+  ] [
+     fhir:code [ fhir:v "78" ] ;
+     fhir:display [ fhir:v "INGRESO ERA" ]
+  ] [
+     fhir:code [ fhir:v "79" ] ;
+     fhir:display [ fhir:v "INGRESO FONOAUDIOLOGÍA" ]
+  ] [
+     fhir:code [ fhir:v "80" ] ;
+     fhir:display [ fhir:v "INGRESO IRA" ]
+  ] [
+     fhir:code [ fhir:v "81" ] ;
+     fhir:display [ fhir:v "INGRESO MULTIMORBILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "82" ] ;
+     fhir:display [ fhir:v "INGRESO PMAMA" ]
+  ] [
+     fhir:code [ fhir:v "83" ] ;
+     fhir:display [ fhir:v "INGRESO PRENATAL" ]
+  ] [
+     fhir:code [ fhir:v "84" ] ;
+     fhir:display [ fhir:v "INGRESO PROGRAMA CERO" ]
+  ] [
+     fhir:code [ fhir:v "85" ] ;
+     fhir:display [ fhir:v "INGRESO PROGRAMA SALUD MENTAL" ]
+  ] [
+     fhir:code [ fhir:v "86" ] ;
+     fhir:display [ fhir:v "INGRESO REGULACIÓN FERTILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "87" ] ;
+     fhir:display [ fhir:v "INTERVENCIÓN EN CRISIS" ]
+  ] [
+     fhir:code [ fhir:v "88" ] ;
+     fhir:display [ fhir:v "INTERVENCION PSICOSOCIAL DE GRUPOS" ]
+  ] [
+     fhir:code [ fhir:v "89" ] ;
+     fhir:display [ fhir:v "INTERVENCION PSICOSOCIAL GRUPAL" ]
+  ] [
+     fhir:code [ fhir:v "90" ] ;
+     fhir:display [ fhir:v "OTRAS CONSULTAS TMO" ]
+  ] [
+     fhir:code [ fhir:v "91" ] ;
+     fhir:display [ fhir:v "PAP" ]
+  ] [
+     fhir:code [ fhir:v "92" ] ;
+     fhir:display [ fhir:v "PESQUISA HTA" ]
+  ] [
+     fhir:code [ fhir:v "93" ] ;
+     fhir:display [ fhir:v "PROCEDIMIENTOS" ]
+  ] [
+     fhir:code [ fhir:v "94" ] ;
+     fhir:display [ fhir:v "PROGRAMA GES ODONTOLOGICO" ]
+  ] [
+     fhir:code [ fhir:v "95" ] ;
+     fhir:display [ fhir:v "PROGRAMA MEJORAMIENTO DEL ACCESO A LA ATENCIÓN ODONTOLÓGICA" ]
+  ] [
+     fhir:code [ fhir:v "96" ] ;
+     fhir:display [ fhir:v "PROGRAMA ODONTOLÓGICO INTEGRAL" ]
+  ] [
+     fhir:code [ fhir:v "97" ] ;
+     fhir:display [ fhir:v "PULIDO CORONARIO Y DESTARTRAJE SUPRAGINGIVAL" ]
+  ] [
+     fhir:code [ fhir:v "98" ] ;
+     fhir:display [ fhir:v "REALIZACIÓN EMPAM" ]
+  ] [
+     fhir:code [ fhir:v "99" ] ;
+     fhir:display [ fhir:v "SEGUIMIENTO DE CASOS" ]
+  ] [
+     fhir:code [ fhir:v "100" ] ;
+     fhir:display [ fhir:v "SEGUIMIENTO DE TEPSI" ]
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "SEGUMIENTO A DISTANCIA MULTIMORBILIDAD" ]
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "SESION DE REHABILITACION INTEGRAL" ]
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "SESION DE REHABILITACION PULMONAR" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "TALLER EN EDUCACIÓN ESPECIAL EN ADULTO MAYOR" ]
+  ] [
+     fhir:code [ fhir:v "105" ] ;
+     fhir:display [ fhir:v "TALLER GRUPAL" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "TALLER GRUPAL PMAMA" ]
+  ] [
+     fhir:code [ fhir:v "107" ] ;
+     fhir:display [ fhir:v "TAMIZAJE PARA EVALUAR RIESGO DE CONSUMO DE ALCOHOL, TABACO Y OTRAS DROGAS" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "TELECLIMATERIO" ]
+  ] [
+     fhir:code [ fhir:v "109" ] ;
+     fhir:display [ fhir:v "TEST DE MARCHA" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "TEST DE PROVOCACIÓN CON EJERCICIO" ]
+  ] [
+     fhir:code [ fhir:v "111" ] ;
+     fhir:display [ fhir:v "TOMA DE ECOGRAFIA" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "TOMA DE ELECTROCARDIOGRAMA" ]
+  ] [
+     fhir:code [ fhir:v "113" ] ;
+     fhir:display [ fhir:v "TOMA DE ESPIROMETRIA" ]
+  ] [
+     fhir:code [ fhir:v "114" ] ;
+     fhir:display [ fhir:v "TOMA DE MAMOGRAFIA" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "TOMA DE MUESTRAS" ]
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "TOMA DE RADIOGRAFIA" ]
+  ] [
+     fhir:code [ fhir:v "117" ] ;
+     fhir:display [ fhir:v "VISITA DOMICILIARIA INTEGRAL" ]
+  ] [
+     fhir:code [ fhir:v "118" ] ;
+     fhir:display [ fhir:v "VISITAS CON FINES DE TRATAMIENTOS Y/O PROCEDIMIENTOS EN DOMICILIO" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

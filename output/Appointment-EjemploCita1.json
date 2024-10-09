@@ -1,0 +1,41 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "EjemploCita1",
+  "meta" : {
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Cita"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment EjemploCita1</b></p><a name=\"EjemploCita1\"> </a><a name=\"hcEjemploCita1\"> </a><a name=\"EjemploCita1-es-CL\"> </a><p><b>Apellido Servicio</b>: Comentario de la cita</p><p><b>status</b>: Booked</p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct 408467006}\">Adult mental illness - specialty (qualifier value)</span></p><p><b>start</b>: 2024-07-25 12:30:00-0300</p><p><b>end</b>: 2024-07-25 12:50:00-0300</p><p><b>basedOn</b>: <a href=\"ServiceRequest-EjemploSolicitudServicio1.html\">ServiceRequest: status = active; intent = order; priority = routine; authoredOn = 2024-07-20 12:00:00-0300</a></p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-EjemploPaciente1.html\">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Practitioner-EjemploPrestador1.html\">Practitioner Cuevas Antonia </a></p><p><b>required</b>: Optional</p><p><b>status</b>: Accepted</p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/ApellidoServicio",
+    "valueString" : "Comentario de la cita"
+  }],
+  "status" : "booked",
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "408467006"
+    }]
+  }],
+  "start" : "2024-07-25T12:30:00-03:00",
+  "end" : "2024-07-25T12:50:00-03:00",
+  "basedOn" : [{
+    "reference" : "ServiceRequest/EjemploSolicitudServicio1"
+  }],
+  "participant" : [{
+    "actor" : {
+      "reference" : "Patient/EjemploPaciente1"
+    },
+    "required" : "required",
+    "status" : "accepted"
+  },
+  {
+    "actor" : {
+      "reference" : "Practitioner/EjemploPrestador1"
+    },
+    "required" : "optional",
+    "status" : "accepted"
+  }]
+}

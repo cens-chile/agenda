@@ -1,0 +1,18 @@
+{
+  "resourceType" : "AppointmentResponse",
+  "id" : "EjemploRespuestaCita1",
+  "meta" : {
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AppointmentResponse EjemploRespuestaCita1</b></p><a name=\"EjemploRespuestaCita1\"> </a><a name=\"hcEjemploRespuestaCita1\"> </a><a name=\"EjemploRespuestaCita1-es-CL\"> </a><p><b>appointment</b>: <a href=\"Appointment-EjemploCita1.html\">Appointment: extension = Comentario de la cita; status = booked; specialty = Adult mental illness - specialty (qualifier value); start = 2024-07-25 12:30:00-0300; end = 2024-07-25 12:50:00-0300</a></p><p><b>actor</b>: <a href=\"Patient-EjemploPaciente1.html\">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>participantStatus</b>: Accepted</p></div>"
+  },
+  "appointment" : {
+    "reference" : "Appointment/EjemploCita1"
+  },
+  "actor" : {
+    "reference" : "Patient/EjemploPaciente1"
+  },
+  "participantStatus" : "accepted"
+}

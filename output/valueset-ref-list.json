@@ -1,0 +1,145 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-Cita.html" : "Perfil Cita"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRequired",
+      "title" : "ParticipantRequired",
+      "description" : "Is the Participant required to attend the appointment.",
+      "systems" : ["http://hl7.org/fhir/participantrequired"],
+      "oids" : ["2.16.840.1.113883.4.642.3.488"],
+      "sources" : ["2.16.840.1.113883.4.642.3.488"],
+      "uses" : {
+      },
+      "StructureDefinition-Cita.html" : "Perfil Cita"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participationstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipationStatus",
+      "title" : "ParticipationStatus",
+      "description" : "The Participation status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/participationstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.486"],
+      "sources" : ["2.16.840.1.113883.4.642.3.486"],
+      "uses" : {
+      },
+      "StructureDefinition-CitaRespuesta.html" : "Perfil de la Respuesta a la cita."
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSCategorias",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSCategorias",
+      "title" : "VS Prestaciones",
+      "description" : "Prestaciones",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrestaciones",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSPrestaciones",
+      "title" : "VS Prestaciones",
+      "description" : "Prestaciones",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio",
+      "StructureDefinition-Prestaciones.html" : "Prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrevision",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSPrevision",
+      "title" : "VS Prevision",
+      "description" : "Previsión del paciente",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Prevision.html" : "Prevision del paciente"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSServicios",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSServicios",
+      "title" : "VS SERVICIOS",
+      "description" : "Servicio que dara el prestador",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Servicios.html" : "Servicio del prestador"
+    }
+  ]
+}
