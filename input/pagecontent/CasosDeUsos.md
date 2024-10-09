@@ -2,7 +2,7 @@
 Esta guía de implementación es diseñada para el uso de datos enfocados en la Atención Primaria de Salud (APS) para Agenda. A continuacion se puede observar su diagrama de secuencia: 
 
 <div align="center" >
-  {% include Secuencia.svg %}
+  {% include secuencia1.svg %}
 </div>
 <br clear="all"/>
 

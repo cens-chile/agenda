@@ -1,5 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias,0.1.0,active,,CSCategotias,CS Prestaciones,"Codigos de las prestaciones",
-https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones,0.1.0,active,,CSPrestaciones,CS Prestaciones,"Codigos de las prestaciones",
-https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision,0.1.0,active,,CSPrevision,CS Prevision,"Codigos de la previsión del paciente",
-https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios,0.1.0,active,,CSServicios,CSServicios,"Aca estan los codigos del servicio del prestador que dara la cita",
