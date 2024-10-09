@@ -1,5 +1,5 @@
 Profile: Organizacion
-Parent: Organization
+Parent: OrganizacionCL
 Title: "Perfil de la Organización"
 Description: "Este perfil es de la organizacion APS."
 

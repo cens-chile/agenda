@@ -71,7 +71,7 @@ Se utiliza el metodo **PUT** para poder actualizar la información con respecto 
 <br>
 
 ```
-PUT [URL_Base]/Appointment{id_Appointment}
+PUT [URL_Base]/Appointment/{id_Appointment}
 ```
 
 #### Caso de uso 4: Lectura de la hora
@@ -91,7 +91,7 @@ Se utiliza el metodo **GET** para poder acceder a la información  de las citas 
 <br>
 
 ```
-GET [URL_Base] Appointment?date=ge{fecha}&patient=Patient.identifier={identifier}
+GET [URL_Base] Appointment?date=ge{fecha}&patient.identifier={identifier}
 ```
 <br>
 
@@ -99,7 +99,7 @@ GET [URL_Base] Appointment?date=ge{fecha}&patient=Patient.identifier={identifier
 <br>
 
 ```
-GET [URL_Base] Appointment?date=le{fehca}&patient=Patient.identifier={identifier}
+GET [URL_Base] Appointment?date=le{fecha}&patient.identifier={identifier}
 ```
 <br>
 
@@ -107,7 +107,7 @@ GET [URL_Base] Appointment?date=le{fehca}&patient=Patient.identifier={identifier
 <br>
 
 ```
-GET [URL_Base] Appointment?date=ge{fecha}&date=le{fehca}&patient=Patient.identifier={identifier}
+GET [URL_Base] Appointment?date=ge{fecha}&date=le{fecha}&patient.identifier={identifier}
 ```
 <br>
 
@@ -115,5 +115,5 @@ GET [URL_Base] Appointment?date=ge{fecha}&date=le{fehca}&patient=Patient.identif
 <br>
 
 ``` 
-GET [URL_Base] Appointment?patient=Patient.identifier={identifier}
+GET [URL_Base] Appointment?patientt.identifier={identifier}
 ```

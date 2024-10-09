@@ -1,15 +1,15 @@
 Profile: RolPrestador
-Parent: PractitionerRole
+Parent: CoreRolClinicoCl
 Id: RolPrestador
 Title: "Perfil del Rol del Prestador"
 Description: "Este es el perfil del rol del prestador"
 
 * practitioner 1..1
-* practitioner only Reference(Practitioner)
+* practitioner only Reference(Prestador)
 * practitioner ^short = "Prestador"
 
 * organization 1..1
-* organization only Reference(Organization)
+* organization only Reference(Organizacion)
 * organization ^short = "Nombre de la Organización"
 
 
