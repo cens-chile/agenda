@@ -28,6 +28,9 @@ Description: "Este es el perfil de la Solicitud del Servicio"
 * authoredOn 1..1
   * ^short = "Fecha y hora de la solicitud."
 
+* code from ProcedureCodes(SNOMEDCT) (example)
+* code ^binding.description = ""
+
 * reasonCode 0..1
   * ^short = "Prestación que solicita el paciente."
 * reasonCode from VSPrestaciones (required)
