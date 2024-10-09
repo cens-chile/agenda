@@ -47,7 +47,7 @@ dependencies:
 #
 pages:
   index.md:
-    title: Example Home
+    title: Home
   Objetivos.md:
     title: Objetivos
   CasosDeUsos.md:
