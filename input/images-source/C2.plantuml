@@ -1,7 +1,7 @@
 @startuml
 
 group PUT Acepto/Rechazo de hora
-Servidor -> Paciente : PUT
+Servidor -> Paciente : POST BundleRespuesta
 activate Paciente
 Paciente -> Paciente : Acepto/Rechazo
 return 

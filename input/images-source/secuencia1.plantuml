@@ -1,14 +1,14 @@
 @startuml
 
 group POST Solicitud de hora
-Paciente -> Servidor : POST
+Paciente -> Servidor : POST BundleSolicitud
 activate Servidor
 Servidor -> Servidor : Validación
 return 
 end
 
 group PUT Acepto/Rechazo de hora
-Servidor -> Paciente : PUT
+Servidor -> Paciente : POST AppointmentResponse
 activate Paciente
 Paciente -> Paciente : Acepto/Rechazo
 return 
@@ -21,8 +21,8 @@ Servidor -> Servidor : Actualización
 return
 end
 
-group GET Leer la hora
-Paciente -> Servidor : GET 
+group GET Leer Agenda Propuesta/Confirmada
+Paciente -> Servidor : GET Param
 activate Servidor
 Servidor -> Servidor : Verificación
 return 

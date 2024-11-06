@@ -1,14 +1,11 @@
-Profile: Paciente
+Profile: PacienteAgenda
 Parent: CorePacienteCl
-Id: Paciente
+Id: PacienteAgenda
 Title: "Paciente"
 Description: "Perfil del paciente"
 
 * name 1..1 MS
 * name.given 1..* MS
-* name.family ^short = "1er Apellido Paciente"
-* name.family.extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido named SegundoApellido 0..1 MS
-* name.family.extension[SegundoApellido] ^short = "2do Apellido Paciente"
 
 
 * identifier 1..1 MS
@@ -47,12 +44,12 @@ Description: "Perfil del paciente"
 * extension contains Edad named edad 0..1 MS
   * ^short = "Edad del paciente" 
 
-* extension contains Prevision named prevision 1..1 MS
-  * ^short = "Previsión paciente" 
+//* extension contains Prevision named prevision 1..1 MS
+//  * ^short = "Previsión paciente" 
 
 
 Instance: EjemploPaciente1
-InstanceOf: Paciente
+InstanceOf: PacienteAgenda
 Usage: #example
 Title: "Ejemplo Paciente"
 Description: "Ejemplo del perfil del paciente"
@@ -61,16 +58,17 @@ Description: "Ejemplo del perfil del paciente"
 * identifier.value = "20.706.399-1"
 * birthDate = "2001-02-10"
 * extension[Edad].valueInteger = 23
-* extension[prevision].valueCode = #01
+//* extension[prevision].valueCode = #01
 
 Instance: EjemploPaciente2
-InstanceOf: Paciente
+InstanceOf: PacienteAgenda
 Usage: #example
 Title: "Ejemplo Paciente"
 Description: "Ejemplo del perfil del paciente"
+//* id = "2"
 * name.given = "Maria Camila"
 * name.family = "Ospina"
 * identifier.value = "25.634.739-0"
 * birthDate = "1999-04-12"
 * extension[Edad].valueInteger = 25
-* extension[prevision].valueCode = #01
+//* extension[prevision].valueCode = #01

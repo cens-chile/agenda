@@ -10,13 +10,14 @@ Esta guía de implementación es diseñada para el uso de datos enfocados en la 
 El proyecto se separa en 4 Casos de Usos, los cuales son detallados a continuación:
 
 ##### Caso de Uso 1: Solicitud de hora
-Este caso de uso describe la solicitud de una hora médica solicitada por el paciente, el cual esperara una respuesta.  Se requiere de los siguientes datos para poder solicitar la hora médica:
+Este caso de uso describe la solicitud de una hora médica solicitada por el paciente o tercero. Una vez hecha la solicitud se le indicará la disponibilidad. La regla de negocio indica que el sistema previamente consultará poir el recurso asociado al paciente en el servidor. **Esta Caso de Uso no Considera la Creación de la Ficha del Paciente, solo su eventual actualización**
 <br>
-* Nombre del paciente
-* RUT paciente
-* Fecha de nacimiento
-* Edad
-* Previsión
+
+##### Recursos Asociados
+
+* Paciente (solo para actualización)
+* Bundle
+* ServiceRequest
 <br>
 
 <div align="center" >
@@ -25,11 +26,11 @@ Este caso de uso describe la solicitud de una hora médica solicitada por el pac
 <br clear="all"/>
 
 ##### Operación
-Se utiliza el método **POST** para enviar una solicitud de creación de una nueva cita. Quedando la siguiente transacción:
+Se utiliza el método **POST** para enviar una solicitud de creación de una nueva cita, por medio de un Bundle. Quedando la siguiente transacción:
 <br>
 
 ```
-POST [URL_Base]/ServiceRequest/
+POST [URL_Base]/
 ```
 
 #### Caso de Uso 2: Acepto/Rechazo de hora 
@@ -44,6 +45,14 @@ El paciente recibe la información detallada de la cita médica, en la cual incl
 El paciente puede aceptar o rechazar esta hora médica. Dependientemente de la decicion que tome se actualiza el estado de la cita médica.
 En el caso de que el paciente acepte la cita médica cambia el estado a booked.
 En el caso de que el paciente rechace la cita médica se le busca otra hora y en el caso que vuelva a rechazar la segunda cita médica quedara en lista de espera.
+<br>
+
+##### Recursos Asociados
+
+* Bundle
+* AppointmentResponse
+* Appointment
+
 
 <div align="center" >
   {% include C2.svg %}
@@ -51,11 +60,11 @@ En el caso de que el paciente rechace la cita médica se le busca otra hora y en
 <br clear="all"/>
 
 ##### Operación
-Se utiliza el metodo **PUT** para poder aceptar o rechazar la cita medica. Quedando la siguiente transacción:
+Se utiliza el metodo **POST** para poder aceptar o rechazar la cita medica por medio de un Bundle. El bundle especificará el AppointmentREsponse y la actualización del estado de la Agenda Propuesta:
 <br>
 
 ```
-PUT [URL_Base]/Appointment/{id_Appointment}
+POST [URL_Base]/
 ```
 
 #### Caso de uso 3: Reagendamiento de hora
@@ -75,7 +84,7 @@ PUT [URL_Base]/Appointment/{id_Appointment}
 ```
 
 #### Caso de uso 4: Lectura de la hora
-El ususario puede acceder a la vizualización de sus citas para revisar el historial y detalles de sus citas médicas.
+El ususario puede acceder a la vizualización de sus citas para revisar el historial y detalles de sus citas médicas o ver si hay alguna cita propuesta.
 <br>
 
 <div align="center" >
@@ -90,6 +99,13 @@ Se utiliza el metodo **GET** para poder acceder a la información  de las citas 
 1.- Lectura con el identificador del paciente y desde una fecha en adelante de las citas médicas:
 <br>
 
+* Si se desea revisar si hay alguna hora propuesta 
+```
+GET [URL_Base] Appointment?status=proposed&patient.identifier={identifier}
+```
+<br>
+
+1.- Si se desea revisar por rango de fechas
 ```
 GET [URL_Base] Appointment?date=ge{fecha}&patient.identifier={identifier}
 ```

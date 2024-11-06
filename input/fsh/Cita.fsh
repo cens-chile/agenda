@@ -1,14 +1,21 @@
 Profile: Cita
 Parent: Appointment
+Id: Cita
 Title: "Perfil Cita"
 Description: "Una reserva de un evento de atención médica entre pacientes, médicos, personas relacionadas y/o dispositivos para una fecha/hora específica. Esto puede resultar en uno o más Encuentros."
 
 * extension contains ApellidoServicio named apellidoservicio 1..1 MS
   * ^short = "Comentarios respecto al servicio que se realizara durante la cita." 
 
+
+* status 1..1
+  * ^short = "proposed | pending | booked | arrived | fulfilled | cancelled | noshow | entered-in-error | checked-in | waitlist"
+  * ^definition = "En la medida que no exista una respuesta de aprobación esta queda como #proposed"
+* status from http://hl7.org/fhir/ValueSet/appointmentstatus (required)
 * specialty 0..*
   * ^short = "La especialidad de un profesional que se requeriría para realizar el servicio solicitado en esta cita."
 * specialty from http://hl7.org/fhir/ValueSet/c80-practice-codes (extensible)
+
 
 * basedOn 1..1
   * ^short = "Referencia a la solicitud del servicio."
@@ -28,7 +35,7 @@ Description: "Una reserva de un evento de atención médica entre pacientes, mé
 * participant[paciente] ^short = "Paciente agendado."
   * actor 1..1 MS
   * required = #required
-  * actor only Reference(Paciente)
+  * actor only Reference(PacienteAgenda)
     * ^short = "Referencia al paciente agendado."
   * required 1..1 MS
     * ^short = "required | optional | information-only"

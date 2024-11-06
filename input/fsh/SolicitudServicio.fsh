@@ -23,7 +23,7 @@ Description: "Este es el perfil de la Solicitud del Servicio"
 
 * subject 1..1
   * ^short = "La persona que inició la solicitud."
-* subject only Reference(Paciente)
+* subject only Reference(PacienteAgenda)
 
 * authoredOn 1..1
   * ^short = "Fecha y hora de la solicitud."
