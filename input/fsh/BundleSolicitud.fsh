@@ -29,7 +29,7 @@ Description:    "Este Perfil describe como debe ser el recurso Bundle que permit
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Tipos de recursos necesarios"
-* entry contains Paciente  0..1 MS and Solicitud 1..1 MS and Prev 1..* MS 
+* entry contains Paciente  0..1 MS and Solicitud 1..1 MS and Prev 1..* MS and RazonesDiag 0..* MS and RazonesObs 0..* MS
 
 * entry and entry.resource MS
 * entry ^short = "Recursos Contenidos en el Bundle"
@@ -49,6 +49,15 @@ Description:    "Este Perfil describe como debe ser el recurso Bundle que permit
   * ^short = "Método para servidor"
   * method = #POST
 
+* entry[RazonesDiag].resource only DiagnosticoCl 
+* entry[RazonesDiag].request 1..1 MS
+  * ^short = "Método para servidor"
+  * method = #POST
+
+* entry[RazonesObs].resource only ObservacionCL 
+* entry[RazonesObs].request 1..1 MS
+  * ^short = "Método para servidor"
+  * method = #POST
 
 Instance: EjBundSolicitud
 Description: "Ejemplo de agrupador para la solicitud de una hora"

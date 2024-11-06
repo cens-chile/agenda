@@ -34,6 +34,9 @@ Description: "Este es el perfil de la Solicitud del Servicio"
 * reasonCode 0..1
   * ^short = "Prestación que solicita el paciente."
 * reasonCode from VSPrestaciones (required)
+* reasonReference 1..* MS
+  * ^short = "Datos que justifican la solicitud"
+* reasonReference only Reference(ObservacionCL or DiagnosticoCl)
 
 Instance: EjemploSolicitudServicio1
 InstanceOf: SolicitudServicio
@@ -48,6 +51,7 @@ Description: "Ejemplo Solicitud Servicio 1"
 * subject = Reference(Patient/EjemploPaciente1)
 * authoredOn = "2024-07-20T12:00:00-03:00"
 //* reasonCode = #18
+* reasonReference.display = "Dolor estomacal agudo"
 
 
 Instance: EjemploSolicitudServicio2
@@ -63,4 +67,5 @@ Description: "Ejemplo Solicitud Servicio 2"
 * subject = Reference(Patient/EjemploPaciente2)
 * authoredOn = "2024-07-20T12:00:00-03:00"
 //* reasonCode = #21
+* reasonReference.display = "Dolor estomacal agudo"
 
