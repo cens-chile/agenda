@@ -91,3 +91,4 @@ Description: "Aca esta el ejemplo de la cita médica paciente 2"
 * extension[ApellidoServicio].valueString = "Comentario de la cita"
 * start = "2024-07-25T15:30:00-03:00" 
 * end = "2024-07-25T13:10:00-03:00"
+
