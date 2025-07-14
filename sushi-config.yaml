@@ -217,8 +217,6 @@ instanceOptions:
   #
   # setMetaProfile: always # always | never | inline-only | standalone-only
   #
-  #
   # Determines for which types of Instances SUSHI will automatically set id
   # if InstanceOf references a profile:
-  #
   # setId: always # always | standalone-only
