@@ -1,0 +1,101 @@
+Agendacitasmedicas : Validation Results
+=========================================
+
+err = 1, warn = 10, info = 7
+$--
+Generated $--. FHIR version $-- for hl7.fhir.cl.agenda#$-- (canonical = https://interoperabilidad.minsal.cl/fhir/ig/agenda)
+ Build Errors : 0 / 1 / 0
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Appointment-EjemploCita1 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Appointment-EjemploCita2 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/AppointmentResponse-EjemploRespuestaCita1 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/AppointmentResponse-EjemploRespuestaCita2 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Bundle-BundResp : 0 / 2 / 7
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Bundle-BundSol : 0 / 2 / 11
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/CodeSystem-CSCategotias : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/CodeSystem-CSPrestaciones : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/CodeSystem-CSPrevision : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/CodeSystem-CSServicios : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Coverage-EjemploPrevison : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.agenda : 0 / 2 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Organization-EjemploOrganizacion : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Patient-EjemploPaciente1 : 0 / 0 / 2
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Patient-EjemploPaciente2 : 0 / 0 / 2
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Practitioner-EjemploPrestador1 : 0 / 1 / 2
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/PractitionerRole-EjemploRolPrestador : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ServiceRequest-EjemploSolicitudServicio1 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ServiceRequest-EjemploSolicitudServicio2 : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-ApellidoServicio : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-BundleRespuesta : 0 / 1 / 2
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-BundleSolicitud : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Cita : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-CitaRespuesta : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Edad : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Organizacion : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-PacienteAgenda : 0 / 0 / 3
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Prestaciones : 0 / 1 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Prestador : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Prevision : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-RolPrestador : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Servicios : 1 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-SolicitudServicio : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ValueSet-VSCategorias : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ValueSet-VSPrestaciones : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ValueSet-VSPrevision : 0 / 0 / 1
+ /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/ValueSet-VSServicios : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/Appointment-EjemploCita1.json ==
+== fsh-generated/resources/Appointment-EjemploCita2.json ==
+== fsh-generated/resources/AppointmentResponse-EjemploRespuestaCita1.json ==
+== fsh-generated/resources/AppointmentResponse-EjemploRespuestaCita2.json ==
+== fsh-generated/resources/Bundle-BundResp.json ==
+WARNING: Bundle/BundResp: Bundle.entry[0].resource.appointment: La Entry 1 coincide con la referencia Appointment/EjemploCita2 por tipo e id pero su fullUrl https://server1/fhir/Appointment/EjemploCita2 no coincide el full Url del destino urn:uuid:EjemploCita2 por reglas de resolución de Bundle
+WARNING: Bundle/BundResp: Bundle.entry[0].resource/*AppointmentResponse/EjemploRespuestaCita2*/.appointment: La Entry 1 coincide con la referencia Appointment/EjemploCita2 por tipo e id pero su fullUrl https://server1/fhir/Appointment/EjemploCita2 no coincide el full Url del destino urn:uuid:EjemploCita2 por reglas de resolución de Bundle
+== fsh-generated/resources/Bundle-BundSol.json ==
+INFORMATION: Bundle/BundSol: Bundle.entry[0].resource.name[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/PacienteAgenda|0.4.0
+WARNING: Bundle/BundSol: Bundle.entry[1].resource.subject: La Entry 0 coincide con la referencia Patient/EjemploPaciente2 por tipo e id pero su fullUrl https://server1/fhir/Patient/EjemploPaciente2 no coincide el full Url del destino urn:uuid:EjemploPaciente2 por reglas de resolución de Bundle
+WARNING: Bundle/BundSol: Bundle.entry[1].resource/*ServiceRequest/EjemploSolicitudServicio2*/.subject: La Entry 0 coincide con la referencia Patient/EjemploPaciente2 por tipo e id pero su fullUrl https://server1/fhir/Patient/EjemploPaciente2 no coincide el full Url del destino urn:uuid:EjemploPaciente2 por reglas de resolución de Bundle
+== fsh-generated/resources/CodeSystem-CSCategotias.json ==
+== fsh-generated/resources/CodeSystem-CSPrestaciones.json ==
+== fsh-generated/resources/CodeSystem-CSPrevision.json ==
+== fsh-generated/resources/CodeSystem-CSServicios.json ==
+== fsh-generated/resources/Coverage-EjemploPrevison.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.agenda.json ==
+WARNING: ImplementationGuide/hl7.fhir.cl.agenda: ImplementationGuide.definition.resource[1].name: el valor no puede empezar o terminar con espacios en blanco 'Bundle Transacción para indicar la respuesta ante una propuesta de cita médica '
+WARNING: ImplementationGuide/hl7.fhir.cl.agenda: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.cl.clcore#1.9.1 released on 2024-09-26, but the most recent appropriate version is 1.9.4. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Organization-EjemploOrganizacion.json ==
+== fsh-generated/resources/Patient-EjemploPaciente1.json ==
+INFORMATION: Patient/EjemploPaciente1: Patient.name[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/PacienteAgenda|0.4.0
+== fsh-generated/resources/Patient-EjemploPaciente2.json ==
+INFORMATION: Patient/EjemploPaciente2: Patient.name[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/PacienteAgenda|0.4.0
+== fsh-generated/resources/Practitioner-EjemploPrestador1.json ==
+INFORMATION: Practitioner/EjemploPrestador1: Practitioner.qualification[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador|0.4.0
+WARNING: Practitioner/EjemploPrestador1: Practitioner.qualification[0].code.coding[0].system: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional' could not be found, so the code cannot be validated
+== fsh-generated/resources/PractitionerRole-EjemploRolPrestador.json ==
+== fsh-generated/resources/ServiceRequest-EjemploSolicitudServicio1.json ==
+== fsh-generated/resources/ServiceRequest-EjemploSolicitudServicio2.json ==
+== fsh-generated/resources/StructureDefinition-ApellidoServicio.json ==
+== fsh-generated/resources/StructureDefinition-BundleRespuesta.json ==
+WARNING: StructureDefinition/BundleRespuesta: StructureDefinition.title: el valor no puede empezar o terminar con espacios en blanco 'Bundle Transacción para indicar la respuesta ante una propuesta de cita médica '
+INFORMATION: StructureDefinition/BundleRespuesta: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-BundleSolicitud.json ==
+== fsh-generated/resources/StructureDefinition-Cita.json ==
+== fsh-generated/resources/StructureDefinition-CitaRespuesta.json ==
+== fsh-generated/resources/StructureDefinition-Edad.json ==
+== fsh-generated/resources/StructureDefinition-Organizacion.json ==
+== fsh-generated/resources/StructureDefinition-PacienteAgenda.json ==
+INFORMATION: StructureDefinition.snapshot.element[36]: The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
+INFORMATION: StructureDefinition/PacienteAgenda: StructureDefinition.snapshot.element[55].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+== fsh-generated/resources/StructureDefinition-Prestaciones.json ==
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestaciones'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Prestador.json ==
+== fsh-generated/resources/StructureDefinition-Prevision.json ==
+== fsh-generated/resources/StructureDefinition-RolPrestador.json ==
+== fsh-generated/resources/StructureDefinition-Servicios.json ==
+ERROR: StructureDefinition/Servicios: StructureDefinition.context[0]: The element https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner is not valid
+== fsh-generated/resources/StructureDefinition-SolicitudServicio.json ==
+== fsh-generated/resources/ValueSet-VSCategorias.json ==
+== fsh-generated/resources/ValueSet-VSPrestaciones.json ==
+== fsh-generated/resources/ValueSet-VSPrevision.json ==
+== fsh-generated/resources/ValueSet-VSServicios.json ==

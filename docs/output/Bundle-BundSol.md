@@ -1,0 +1,201 @@
+# EjBundSolicitud - Guía de Implementación para la gestión de citas médicas enfocado en la APS v0.4.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **EjBundSolicitud**
+
+## Example Bundle: EjBundSolicitud
+
+Profile: [Bundle Transacción para indicar la solicitud de una hora médica ambulatoria](StructureDefinition-BundleSolicitud.md)
+
+Bundle BundSol of type transaction
+
+-------
+
+Entry 1 - fullUrl = https://server1/fhir/Patient/EjemploPaciente2
+
+Rec}:
+
+> 
+
+Profile: [Paciente](StructureDefinition-PacienteAgenda.md)
+
+Maria Camila Ospina (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)
+-------
+
+Request:
+
+```
+PUT Patient/2
+
+```
+
+-------
+
+Entry 2 - fullUrl = urn:uuid:8a7b4900-3861-4849-b36f-ad1ec3c46a2f
+
+Rec}:
+
+> 
+
+Profile: [Perfil de la Solicitud del Servicio](StructureDefinition-SolicitudServicio.md)
+
+**status**: Active**intent**: Order**priority**: Routine**subject**:[Maria Camila Ospina (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)](Patient-EjemploPaciente2.md)**authoredOn**: 2024-07-20 12:00:00-0300
+
+Request:
+
+```
+POST ServiceRequest/
+
+```
+
+-------
+
+Entry 3 - fullUrl = urn:uuid:8a7b4901-3862-4649-b66f-ac1ec3c4aa2f
+
+Rec}:
+
+> 
+
+Profile: [Prevision](StructureDefinition-Prevision.md)
+
+**status**: Active**type**:FONASA**beneficiary**:[Valentina Daniela Contreras (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)](Patient-EjemploPaciente1.md)
+
+Request:
+
+```
+POST Coverage/
+
+```
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "BundSol",
+  "meta" : {
+    "profile" : [
+      "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/BundleSolicitud"
+    ]
+  },
+  "identifier" : {
+    "value" : "BundSol"
+  },
+  "type" : "transaction",
+  "timestamp" : "2024-07-26T14:15:00-03:00",
+  "entry" : [
+    {
+      "fullUrl" : "https://server1/fhir/Patient/EjemploPaciente2",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "EjemploPaciente2",
+        "meta" : {
+          "profile" : [
+            "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/PacienteAgenda"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_EjemploPaciente2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Paciente EjemploPaciente2</b></p><a name=\"EjemploPaciente2\"> </a><a name=\"hcEjemploPaciente2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PacienteAgenda.html\">Paciente</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Maria Camila Ospina  (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Da la edad del paciente\"><a href=\"StructureDefinition-Edad.html\">Edad del paciente</a></td><td colspan=\"3\">25</td></tr></table></div>"
+        },
+        "extension" : [
+          {
+            "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Edad",
+            "valueInteger" : 25
+          }
+        ],
+        "identifier" : [
+          {
+            "value" : "25.634.739-0"
+          }
+        ],
+        "name" : [
+          {
+            "family" : "Ospina",
+            "given" : ["Maria Camila"]
+          }
+        ],
+        "birthDate" : "1999-04-12"
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Patient/2"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:8a7b4900-3861-4849-b36f-ad1ec3c46a2f",
+      "resource" : {
+        "resourceType" : "ServiceRequest",
+        "id" : "EjemploSolicitudServicio2",
+        "meta" : {
+          "profile" : [
+            "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/SolicitudServicio"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_EjemploSolicitudServicio2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PeticiónServicio EjemploSolicitudServicio2</b></p><a name=\"EjemploSolicitudServicio2\"> </a><a name=\"hcEjemploSolicitudServicio2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SolicitudServicio.html\">Perfil de la Solicitud del Servicio</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>subject</b>: <a href=\"Patient-EjemploPaciente2.html\">Maria Camila Ospina  (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)</a></p><p><b>authoredOn</b>: 2024-07-20 12:00:00-0300</p><p><b>reasonReference</b>: Dolor estomacal agudo</p></div>"
+        },
+        "status" : "active",
+        "intent" : "order",
+        "priority" : "routine",
+        "subject" : {
+          "reference" : "Patient/EjemploPaciente2"
+        },
+        "authoredOn" : "2024-07-20T12:00:00-03:00",
+        "reasonReference" : [
+          {
+            "display" : "Dolor estomacal agudo"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "ServiceRequest/"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:8a7b4901-3862-4649-b66f-ac1ec3c4aa2f",
+      "resource" : {
+        "resourceType" : "Coverage",
+        "id" : "EjemploPrevison",
+        "meta" : {
+          "profile" : [
+            "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prevision"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_EjemploPrevison\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Cobertura EjemploPrevison</b></p><a name=\"EjemploPrevison\"> </a><a name=\"hcEjemploPrevison\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Prevision.html\">Prevision</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision 01}\">FONASA</span></p><p><b>beneficiary</b>: <a href=\"Patient-EjemploPaciente1.html\">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>payor</b>: Tramo B</p></div>"
+        },
+        "status" : "active",
+        "type" : {
+          "coding" : [
+            {
+              "system" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision",
+              "code" : "01",
+              "display" : "FONASA"
+            }
+          ]
+        },
+        "beneficiary" : {
+          "reference" : "Patient/EjemploPaciente1"
+        },
+        "payor" : [
+          {
+            "display" : "Tramo B"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "POST",
+        "url" : "Coverage/"
+      }
+    }
+  ]
+}
+
+```

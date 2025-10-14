@@ -1,0 +1,66 @@
+# hl7.fhir.cl.agenda#0.4.0: Guía de Implementación para la gestión de citas médicas enfocado en la APS
+
+## Pages
+
+* [Home](index.md)
+* [Seguridad](Seguridad.md)
+* [Objetivos](Objetivos.md)
+* [Artifacts Summary](artifacts.md)
+* [Casos de Uso y Actores](CasosDeUsos.md)
+
+## Resources
+
+### CodeSystems
+
+* [CS Prestaciones](CodeSystem-CSCategotias.md)
+* [CS Prestaciones](CodeSystem-CSPrestaciones.md)
+* [CS Prevision](CodeSystem-CSPrevision.md)
+* [CSServicios](CodeSystem-CSServicios.md)
+
+### ValueSets
+
+* [VS Prestaciones](ValueSet-VSCategorias.md)
+* [VS Prestaciones](ValueSet-VSPrestaciones.md)
+* [VS Prevision](ValueSet-VSPrevision.md)
+* [VS SERVICIOS](ValueSet-VSServicios.md)
+
+### Resource Profiles
+
+* [Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ](StructureDefinition-BundleRespuesta.md)
+* [Bundle Transacción para indicar la solicitud de una hora médica ambulatoria](StructureDefinition-BundleSolicitud.md)
+* [Perfil Cita](StructureDefinition-Cita.md)
+* [Perfil de la Respuesta a la cita.](StructureDefinition-CitaRespuesta.md)
+* [Perfil de la Organización](StructureDefinition-Organizacion.md)
+* [Paciente](StructureDefinition-PacienteAgenda.md)
+* [Prestador](StructureDefinition-Prestador.md)
+* [Prevision](StructureDefinition-Prevision.md)
+* [Perfil del Rol del Prestador](StructureDefinition-RolPrestador.md)
+* [Perfil de la Solicitud del Servicio](StructureDefinition-SolicitudServicio.md)
+
+### Extensions
+
+* [Apellido Servicio](StructureDefinition-ApellidoServicio.md)
+* [Edad del paciente](StructureDefinition-Edad.md)
+* [Prestaciones](StructureDefinition-Prestaciones.md)
+* [Servicio del prestador](StructureDefinition-Servicios.md)
+
+### ImplementationGuides
+
+* [Guía de Implementación para la gestión de citas médicas enfocado en la APS](index.md)
+
+### Examples
+
+* [EjemploCita1 (Appointment)](Appointment-EjemploCita1.md)
+* [EjemploCita2 (Appointment)](Appointment-EjemploCita2.md)
+* [EjemploRespuestaCita1 (AppointmentResponse)](AppointmentResponse-EjemploRespuestaCita1.md)
+* [EjemploRespuestaCita2 (AppointmentResponse)](AppointmentResponse-EjemploRespuestaCita2.md)
+* [BundResp (Bundle)](Bundle-BundResp.md)
+* [BundSol (Bundle)](Bundle-BundSol.md)
+* [EjemploPrevison (Coverage)](Coverage-EjemploPrevison.md)
+* [CESFAM Barón (Organization)](Organization-EjemploOrganizacion.md)
+* [EjemploPaciente1 (Patient)](Patient-EjemploPaciente1.md)
+* [EjemploPaciente2 (Patient)](Patient-EjemploPaciente2.md)
+* [EjemploPrestador1 (Practitioner)](Practitioner-EjemploPrestador1.md)
+* [EjemploRolPrestador (PractitionerRole)](PractitionerRole-EjemploRolPrestador.md)
+* [EjemploSolicitudServicio1 (ServiceRequest)](ServiceRequest-EjemploSolicitudServicio1.md)
+* [EjemploSolicitudServicio2 (ServiceRequest)](ServiceRequest-EjemploSolicitudServicio2.md)

@@ -1,0 +1,48 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSCategorias",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "VSCategorias",
+      "title" : "VS Prestaciones",
+      "description" : "Prestaciones",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrestaciones",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "VSPrestaciones",
+      "title" : "VS Prestaciones",
+      "description" : "Prestaciones",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrevision",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "VSPrevision",
+      "title" : "VS Prevision",
+      "description" : "Previsión del paciente",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSServicios",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "VSServicios",
+      "title" : "VS SERVICIOS",
+      "description" : "Servicio que dara el prestador",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios"
+      ]
+    }
+  ]
+}

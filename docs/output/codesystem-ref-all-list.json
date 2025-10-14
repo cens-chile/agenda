@@ -1,0 +1,589 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/appointmentstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AppointmentStatus",
+      "title" : "AppointmentStatus",
+      "description" : "The free/busy status of an appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.4.485"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.593"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-fm-status.html" : "Financial Resource Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "oids" : ["2.16.840.1.113883.4.642.4.66"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/participantrequired",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRequired",
+      "title" : "ParticipantRequired",
+      "description" : "Is the Participant required to attend the appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.4.489"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-participantrequired.html" : "ParticipantRequired"
+    },
+    {
+      "url" : "http://hl7.org/fhir/participationstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipationStatus",
+      "title" : "ParticipationStatus",
+      "description" : "The Participation status of an appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.4.487"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+      "version" : "2.1.1",
+      "status" : "active",
+      "name" : "AppointmentCancellationReason",
+      "title" : "Appointment cancellation reason",
+      "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1382"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html" : "Appointment cancellation reason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CoverageClassCodes",
+      "title" : "Coverage Class Codes",
+      "description" : "This value set includes Coverage Class codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1147"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-coverage-class.html" : "Coverage Class Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CoverageCopayTypeCodes",
+      "title" : "Coverage Copay Type Codes",
+      "description" : "This value set includes sample Coverage Copayment Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1149"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-coverage-copay-type.html" : "Coverage Copay Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-coverage-financial-exception",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleCoverageFinancialExceptionCodes",
+      "title" : "Example Coverage Financial Exception Codes",
+      "description" : "This value set includes Example Coverage Financial Exception Codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1329"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-coverage-financial-exception.html" : "Example Coverage Financial Exception Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-category",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "ServiceCategory",
+      "title" : "Service category",
+      "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1144"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-category.html" : "Service category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1145"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SubscriberRelationshipCodes",
+      "title" : "SubscriberPolicyholder Relationship Codes",
+      "description" : "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1386"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-subscriber-relationship.html" : "SubscriberPolicyholder Relationship Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AppointmentReason",
+      "title" : "appointmentReason",
+      "description" : "Code system of concepts used to describe the kind of appointment or the reason why an appointment has been scheduled.  Used in HL7 Version 2.x messaging in the ARQ segment.",
+      "oids" : ["2.16.840.1.113883.18.169"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSCodigoDNI",
+      "title" : "Códigos de Documentos DNI para LATAM y el Caribe",
+      "description" : "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSCodigoslenguaje",
+      "title" : "Codigos Lenguaje",
+      "description" : "Codigoslenguaje",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSCodigoslenguaje.html" : "Codigos Lenguaje"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSEspecialidadFarma",
+      "title" : "Especialidad Farmacia",
+      "description" : "Especialidad de Farmacia",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSEspecialidadesCL.html" : "Códigos de Especialidades"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSEspecialidadOdontologica",
+      "title" : "Especialidad Odontologica",
+      "description" : "Especialidad de Odontologica",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSEspecialidadesCL.html" : "Códigos de Especialidades"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSEspecialidadesDeisCL",
+      "title" : "Códigos de Especialidades",
+      "description" : "Códigos de especialidades médicas descritas según DEIS",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSEspecialidadesCL.html" : "Códigos de Especialidades"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "CSTipoIdentificador",
+      "title" : "Tipo Identificador",
+      "description" : "Tipo Identificador",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS",
+      "version" : "1.9.1",
+      "status" : "active",
+      "name" : "EspecialidadesConacemConaceoCS",
+      "title" : "Códigos de Especialidades de CONACEM y CONACEO",
+      "description" : "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile",
+      "uses" : {
+      },
+      "https://hl7chile.cl/fhir/ig/clcore/1.9.1/ValueSet-VSEspecialidadesCL.html" : "Códigos de Especialidades"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSCategotias",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "CSCategotias",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones",
+      "uses" : {
+      },
+      "ValueSet-VSCategorias.html" : "VS Prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "CSPrestaciones",
+      "title" : "CS Prestaciones",
+      "description" : "Codigos de las prestaciones",
+      "uses" : {
+      },
+      "ValueSet-VSPrestaciones.html" : "VS Prestaciones"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "CSPrevision",
+      "title" : "CS Prevision",
+      "description" : "Codigos de la previsión del paciente",
+      "uses" : {
+      },
+      "ValueSet-VSPrevision.html" : "VS Prevision"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSServicios",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "CSServicios",
+      "title" : "CSServicios",
+      "description" : "Aca estan los codigos del servicio del prestador que dara la cita",
+      "uses" : {
+      },
+      "ValueSet-VSServicios.html" : "VS SERVICIOS"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

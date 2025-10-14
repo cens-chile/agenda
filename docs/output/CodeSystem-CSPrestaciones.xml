@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSPrestaciones"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SistemaDeCodigos CSPrestaciones</b></p><a name="CSPrestaciones"> </a><a name="hcCSPrestaciones"> </a><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSPrestaciones-1"> </a></td><td>OTRAS CONSULTAS (ABREVIADAS)</td></tr><tr><td style="white-space:nowrap">2<a name="CSPrestaciones-2"> </a></td><td>APLICACIÓN DE SELLANTES</td></tr><tr><td style="white-space:nowrap">3<a name="CSPrestaciones-3"> </a></td><td>APLICACIÓN DE TEPSI</td></tr><tr><td style="white-space:nowrap">4<a name="CSPrestaciones-4"> </a></td><td>APLICACIÓN EEDP</td></tr><tr><td style="white-space:nowrap">5<a name="CSPrestaciones-5"> </a></td><td>ATENCIÓN DE PODOLOGIA</td></tr><tr><td style="white-space:nowrap">6<a name="CSPrestaciones-6"> </a></td><td>ATENCIÓN EN SALA DE ESTIMULACIÓN</td></tr><tr><td style="white-space:nowrap">7<a name="CSPrestaciones-7"> </a></td><td>ATENCIÓN FARMACEÚTICA</td></tr><tr><td style="white-space:nowrap">8<a name="CSPrestaciones-8"> </a></td><td>ATENCIÓN POR SALUD DIGITAL</td></tr><tr><td style="white-space:nowrap">9<a name="CSPrestaciones-9"> </a></td><td>ATENCIÓN PROFESIONAL POR VIDEOLLAMADA</td></tr><tr><td style="white-space:nowrap">10<a name="CSPrestaciones-10"> </a></td><td>CLINICA O CONSULTA DE LACTANCIA MATERNA</td></tr><tr><td style="white-space:nowrap">11<a name="CSPrestaciones-11"> </a></td><td>CONSEJERIA FAMILIAR</td></tr><tr><td style="white-space:nowrap">12<a name="CSPrestaciones-12"> </a></td><td>CONSEJERIA INDIVIDUAL</td></tr><tr><td style="white-space:nowrap">13<a name="CSPrestaciones-13"> </a></td><td>CONSEJERIA LACTANCIA MATERNA</td></tr><tr><td style="white-space:nowrap">14<a name="CSPrestaciones-14"> </a></td><td>CONSULTA ALTO RIESGO OBSTÉTRICO</td></tr><tr><td style="white-space:nowrap">15<a name="CSPrestaciones-15"> </a></td><td>CONSULTA CIRUGIA MENOR (PROCEDIMIENTO)</td></tr><tr><td style="white-space:nowrap">16<a name="CSPrestaciones-16"> </a></td><td>CONSULTA DE ENFERMERIA</td></tr><tr><td style="white-space:nowrap">17<a name="CSPrestaciones-17"> </a></td><td>CONSULTA DE ESPECIALIDAD (ODONTÓLOGO, OTORRINO, OFTALMOLOGO, OTROS)</td></tr><tr><td style="white-space:nowrap">18<a name="CSPrestaciones-18"> </a></td><td>CONSULTA DE MEDICINA INDÍGENA</td></tr><tr><td style="white-space:nowrap">19<a name="CSPrestaciones-19"> </a></td><td>CONSULTA DE MORBILIDAD</td></tr><tr><td style="white-space:nowrap">20<a name="CSPrestaciones-20"> </a></td><td>CONSULTA DE TERAPEUTA OCUPACIONAL</td></tr><tr><td style="white-space:nowrap">21<a name="CSPrestaciones-21"> </a></td><td>CONSULTA DE URGENCIA</td></tr><tr><td style="white-space:nowrap">22<a name="CSPrestaciones-22"> </a></td><td>CONSULTA FONOAUDIOLOGIA</td></tr><tr><td style="white-space:nowrap">23<a name="CSPrestaciones-23"> </a></td><td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA GRUPAL</td></tr><tr><td style="white-space:nowrap">24<a name="CSPrestaciones-24"> </a></td><td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA INDIVIDUAL</td></tr><tr><td style="white-space:nowrap">25<a name="CSPrestaciones-25"> </a></td><td>CONSULTA GINECOLÓGICA</td></tr><tr><td style="white-space:nowrap">26<a name="CSPrestaciones-26"> </a></td><td>CONSULTA INTEGRAL TMO</td></tr><tr><td style="white-space:nowrap">27<a name="CSPrestaciones-27"> </a></td><td>CONSULTA MATRON/A</td></tr><tr><td style="white-space:nowrap">28<a name="CSPrestaciones-28"> </a></td><td>CONSULTA NUTRICIONAL</td></tr><tr><td style="white-space:nowrap">29<a name="CSPrestaciones-29"> </a></td><td>CONSULTA ODONTOLOGICA MORBILIDAD</td></tr><tr><td style="white-space:nowrap">30<a name="CSPrestaciones-30"> </a></td><td>CONSULTA ODONTOLOGICA TRATAMIENTO</td></tr><tr><td style="white-space:nowrap">31<a name="CSPrestaciones-31"> </a></td><td>CONSULTA PACIENTE AGUDO ERA</td></tr><tr><td style="white-space:nowrap">32<a name="CSPrestaciones-32"> </a></td><td>CONSULTA PACIENTE AGUDO IRA</td></tr><tr><td style="white-space:nowrap">33<a name="CSPrestaciones-33"> </a></td><td>CONSULTA PREVIA O POSTERIOR A CIRUGÍA MENOR</td></tr><tr><td style="white-space:nowrap">34<a name="CSPrestaciones-34"> </a></td><td>CONSULTA PSICOLOGÍCA</td></tr><tr><td style="white-space:nowrap">35<a name="CSPrestaciones-35"> </a></td><td>CONSULTA REHABILITACION</td></tr><tr><td style="white-space:nowrap">36<a name="CSPrestaciones-36"> </a></td><td>CONSULTA SOCIAL</td></tr><tr><td style="white-space:nowrap">37<a name="CSPrestaciones-37"> </a></td><td>CONSULTA TMO OTORRINO</td></tr><tr><td style="white-space:nowrap">38<a name="CSPrestaciones-38"> </a></td><td>CONSULTA VICIO DE REFRACCIÓN</td></tr><tr><td style="white-space:nowrap">39<a name="CSPrestaciones-39"> </a></td><td>CONSULTORÍA DE SALUD MENTAL</td></tr><tr><td style="white-space:nowrap">40<a name="CSPrestaciones-40"> </a></td><td>CONTACTO DE PACIENTE POR VÍA TELEFÓNICA</td></tr><tr><td style="white-space:nowrap">41<a name="CSPrestaciones-41"> </a></td><td>CONTROL CERO</td></tr><tr><td style="white-space:nowrap">42<a name="CSPrestaciones-42"> </a></td><td>CONTROL CLIMATERIO</td></tr><tr><td style="white-space:nowrap">43<a name="CSPrestaciones-43"> </a></td><td>CONTROL CRONICO</td></tr><tr><td style="white-space:nowrap">44<a name="CSPrestaciones-44"> </a></td><td>CONTROL CRONICO ERA</td></tr><tr><td style="white-space:nowrap">45<a name="CSPrestaciones-45"> </a></td><td>CONTROL CRONICO IRA</td></tr><tr><td style="white-space:nowrap">46<a name="CSPrestaciones-46"> </a></td><td>CONTROL DE SALUD INTEGRAL DEL ADOLESCENTE</td></tr><tr><td style="white-space:nowrap">47<a name="CSPrestaciones-47"> </a></td><td>CONTROL DE SALUD MENTAL</td></tr><tr><td style="white-space:nowrap">48<a name="CSPrestaciones-48"> </a></td><td>CONTROL DE SEGUIMIENTO EMPAM</td></tr><tr><td style="white-space:nowrap">49<a name="CSPrestaciones-49"> </a></td><td>CONTROL DIADA</td></tr><tr><td style="white-space:nowrap">50<a name="CSPrestaciones-50"> </a></td><td>CONTROL GINECOLOGICO</td></tr><tr><td style="white-space:nowrap">51<a name="CSPrestaciones-51"> </a></td><td>CONTROL INTEGRAL MULTIMORBILIDAD</td></tr><tr><td style="white-space:nowrap">52<a name="CSPrestaciones-52"> </a></td><td>CONTROL NIÑO SANO</td></tr><tr><td style="white-space:nowrap">53<a name="CSPrestaciones-53"> </a></td><td>CONTROL PACIENTE AGUDO ERA</td></tr><tr><td style="white-space:nowrap">54<a name="CSPrestaciones-54"> </a></td><td>CONTROL PACIENTE AGUDO IRA</td></tr><tr><td style="white-space:nowrap">55<a name="CSPrestaciones-55"> </a></td><td>CONTROL PRECONCEPCIONAL</td></tr><tr><td style="white-space:nowrap">56<a name="CSPrestaciones-56"> </a></td><td>CONTROL PRENATAL</td></tr><tr><td style="white-space:nowrap">57<a name="CSPrestaciones-57"> </a></td><td>CONTROL PUERPERA</td></tr><tr><td style="white-space:nowrap">58<a name="CSPrestaciones-58"> </a></td><td>CONTROL REGULACIÓN FERTILIDAD</td></tr><tr><td style="white-space:nowrap">59<a name="CSPrestaciones-59"> </a></td><td>CURACIÓN AVANZADA</td></tr><tr><td style="white-space:nowrap">60<a name="CSPrestaciones-60"> </a></td><td>CURACIONES SIMPLES</td></tr><tr><td style="white-space:nowrap">61<a name="CSPrestaciones-61"> </a></td><td>EDUCACIÓN FARMACÉUTICA</td></tr><tr><td style="white-space:nowrap">62<a name="CSPrestaciones-62"> </a></td><td>EDUCACIÓN GRUPAL</td></tr><tr><td style="white-space:nowrap">63<a name="CSPrestaciones-63"> </a></td><td>EDUCACION INDIVIDUAL SALUD CARDIOVASCULAR</td></tr><tr><td style="white-space:nowrap">64<a name="CSPrestaciones-64"> </a></td><td>ELABORACIÓN DE INFORMES A TRIBUNALES</td></tr><tr><td style="white-space:nowrap">65<a name="CSPrestaciones-65"> </a></td><td>ENTREVISTA FAMILIAR (Aplicación Tarjetón Familiar)</td></tr><tr><td style="white-space:nowrap">66<a name="CSPrestaciones-66"> </a></td><td>ESPIROMETRIA</td></tr><tr><td style="white-space:nowrap">67<a name="CSPrestaciones-67"> </a></td><td>ESTUDIOS DE FAMILIA</td></tr><tr><td style="white-space:nowrap">68<a name="CSPrestaciones-68"> </a></td><td>EVALUACIÓN DEL PIE DIABÉTICO</td></tr><tr><td style="white-space:nowrap">69<a name="CSPrestaciones-69"> </a></td><td>EVALUACION DISCAPACIDAD (IVADEC)</td></tr><tr><td style="white-space:nowrap">70<a name="CSPrestaciones-70"> </a></td><td>EVALUACIÓN INICIAL DE REHABILITACIÓN</td></tr><tr><td style="white-space:nowrap">71<a name="CSPrestaciones-71"> </a></td><td>EVALUACION INTERMEDIA (REHABILITACIÓN)</td></tr><tr><td style="white-space:nowrap">72<a name="CSPrestaciones-72"> </a></td><td>EXAMEN MEDICINA PREVENTIVA ADULTO (EMPA)</td></tr><tr><td style="white-space:nowrap">73<a name="CSPrestaciones-73"> </a></td><td>FLUORACIÓN TOPICA</td></tr><tr><td style="white-space:nowrap">74<a name="CSPrestaciones-74"> </a></td><td>FLUORACIÓN TOPICA</td></tr><tr><td style="white-space:nowrap">75<a name="CSPrestaciones-75"> </a></td><td>INGRESO A SALA DE ESTIMULACIÓN</td></tr><tr><td style="white-space:nowrap">76<a name="CSPrestaciones-76"> </a></td><td>INGRESO CLIMATERIO</td></tr><tr><td style="white-space:nowrap">77<a name="CSPrestaciones-77"> </a></td><td>INGRESO CRONICO</td></tr><tr><td style="white-space:nowrap">78<a name="CSPrestaciones-78"> </a></td><td>INGRESO ERA</td></tr><tr><td style="white-space:nowrap">79<a name="CSPrestaciones-79"> </a></td><td>INGRESO FONOAUDIOLOGÍA</td></tr><tr><td style="white-space:nowrap">80<a name="CSPrestaciones-80"> </a></td><td>INGRESO IRA</td></tr><tr><td style="white-space:nowrap">81<a name="CSPrestaciones-81"> </a></td><td>INGRESO MULTIMORBILIDAD</td></tr><tr><td style="white-space:nowrap">82<a name="CSPrestaciones-82"> </a></td><td>INGRESO PMAMA</td></tr><tr><td style="white-space:nowrap">83<a name="CSPrestaciones-83"> </a></td><td>INGRESO PRENATAL</td></tr><tr><td style="white-space:nowrap">84<a name="CSPrestaciones-84"> </a></td><td>INGRESO PROGRAMA CERO</td></tr><tr><td style="white-space:nowrap">85<a name="CSPrestaciones-85"> </a></td><td>INGRESO PROGRAMA SALUD MENTAL</td></tr><tr><td style="white-space:nowrap">86<a name="CSPrestaciones-86"> </a></td><td>INGRESO REGULACIÓN FERTILIDAD</td></tr><tr><td style="white-space:nowrap">87<a name="CSPrestaciones-87"> </a></td><td>INTERVENCIÓN EN CRISIS</td></tr><tr><td style="white-space:nowrap">88<a name="CSPrestaciones-88"> </a></td><td>INTERVENCION PSICOSOCIAL DE GRUPOS</td></tr><tr><td style="white-space:nowrap">89<a name="CSPrestaciones-89"> </a></td><td>INTERVENCION PSICOSOCIAL GRUPAL</td></tr><tr><td style="white-space:nowrap">90<a name="CSPrestaciones-90"> </a></td><td>OTRAS CONSULTAS TMO</td></tr><tr><td style="white-space:nowrap">91<a name="CSPrestaciones-91"> </a></td><td>PAP</td></tr><tr><td style="white-space:nowrap">92<a name="CSPrestaciones-92"> </a></td><td>PESQUISA HTA</td></tr><tr><td style="white-space:nowrap">93<a name="CSPrestaciones-93"> </a></td><td>PROCEDIMIENTOS</td></tr><tr><td style="white-space:nowrap">94<a name="CSPrestaciones-94"> </a></td><td>PROGRAMA GES ODONTOLOGICO</td></tr><tr><td style="white-space:nowrap">95<a name="CSPrestaciones-95"> </a></td><td>PROGRAMA MEJORAMIENTO DEL ACCESO A LA ATENCIÓN ODONTOLÓGICA</td></tr><tr><td style="white-space:nowrap">96<a name="CSPrestaciones-96"> </a></td><td>PROGRAMA ODONTOLÓGICO INTEGRAL</td></tr><tr><td style="white-space:nowrap">97<a name="CSPrestaciones-97"> </a></td><td>PULIDO CORONARIO Y DESTARTRAJE SUPRAGINGIVAL</td></tr><tr><td style="white-space:nowrap">98<a name="CSPrestaciones-98"> </a></td><td>REALIZACIÓN EMPAM</td></tr><tr><td style="white-space:nowrap">99<a name="CSPrestaciones-99"> </a></td><td>SEGUIMIENTO DE CASOS</td></tr><tr><td style="white-space:nowrap">100<a name="CSPrestaciones-100"> </a></td><td>SEGUIMIENTO DE TEPSI</td></tr><tr><td style="white-space:nowrap">101<a name="CSPrestaciones-101"> </a></td><td>SEGUMIENTO A DISTANCIA MULTIMORBILIDAD</td></tr><tr><td style="white-space:nowrap">102<a name="CSPrestaciones-102"> </a></td><td>SESION DE REHABILITACION INTEGRAL</td></tr><tr><td style="white-space:nowrap">103<a name="CSPrestaciones-103"> </a></td><td>SESION DE REHABILITACION PULMONAR</td></tr><tr><td style="white-space:nowrap">104<a name="CSPrestaciones-104"> </a></td><td>TALLER EN EDUCACIÓN ESPECIAL EN ADULTO MAYOR</td></tr><tr><td style="white-space:nowrap">105<a name="CSPrestaciones-105"> </a></td><td>TALLER GRUPAL</td></tr><tr><td style="white-space:nowrap">106<a name="CSPrestaciones-106"> </a></td><td>TALLER GRUPAL PMAMA</td></tr><tr><td style="white-space:nowrap">107<a name="CSPrestaciones-107"> </a></td><td>TAMIZAJE PARA EVALUAR RIESGO DE CONSUMO DE ALCOHOL, TABACO Y OTRAS DROGAS</td></tr><tr><td style="white-space:nowrap">108<a name="CSPrestaciones-108"> </a></td><td>TELECLIMATERIO</td></tr><tr><td style="white-space:nowrap">109<a name="CSPrestaciones-109"> </a></td><td>TEST DE MARCHA</td></tr><tr><td style="white-space:nowrap">110<a name="CSPrestaciones-110"> </a></td><td>TEST DE PROVOCACIÓN CON EJERCICIO</td></tr><tr><td style="white-space:nowrap">111<a name="CSPrestaciones-111"> </a></td><td>TOMA DE ECOGRAFIA</td></tr><tr><td style="white-space:nowrap">112<a name="CSPrestaciones-112"> </a></td><td>TOMA DE ELECTROCARDIOGRAMA</td></tr><tr><td style="white-space:nowrap">113<a name="CSPrestaciones-113"> </a></td><td>TOMA DE ESPIROMETRIA</td></tr><tr><td style="white-space:nowrap">114<a name="CSPrestaciones-114"> </a></td><td>TOMA DE MAMOGRAFIA</td></tr><tr><td style="white-space:nowrap">115<a name="CSPrestaciones-115"> </a></td><td>TOMA DE MUESTRAS</td></tr><tr><td style="white-space:nowrap">116<a name="CSPrestaciones-116"> </a></td><td>TOMA DE RADIOGRAFIA</td></tr><tr><td style="white-space:nowrap">117<a name="CSPrestaciones-117"> </a></td><td>VISITA DOMICILIARIA INTEGRAL</td></tr><tr><td style="white-space:nowrap">118<a name="CSPrestaciones-118"> </a></td><td>VISITAS CON FINES DE TRATAMIENTOS Y/O PROCEDIMIENTOS EN DOMICILIO</td></tr></table></div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones"/>
+  <version value="0.4.0"/>
+  <name value="CSPrestaciones"/>
+  <title value="CS Prestaciones"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-13T23:29:58-03:00"/>
+  <publisher value="Unidad de Interoperabilidad - MINSAL"/>
+  <contact>
+    <name value="Unidad de Interoperabilidad - MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://interoperabilidad.minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codigos de las prestaciones"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="118"/>
+  <concept>
+    <code value="1"/>
+    <display value="OTRAS CONSULTAS (ABREVIADAS)"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="APLICACIÓN DE SELLANTES"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="APLICACIÓN DE TEPSI"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="APLICACIÓN EEDP"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="ATENCIÓN DE PODOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="ATENCIÓN EN SALA DE ESTIMULACIÓN"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="ATENCIÓN FARMACEÚTICA"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="ATENCIÓN POR SALUD DIGITAL"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="ATENCIÓN PROFESIONAL POR VIDEOLLAMADA"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="CLINICA O CONSULTA DE LACTANCIA MATERNA"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="CONSEJERIA FAMILIAR"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="CONSEJERIA INDIVIDUAL"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="CONSEJERIA LACTANCIA MATERNA"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="CONSULTA ALTO RIESGO OBSTÉTRICO"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="CONSULTA CIRUGIA MENOR (PROCEDIMIENTO)"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="CONSULTA DE ENFERMERIA"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="CONSULTA DE ESPECIALIDAD (ODONTÓLOGO, OTORRINO, OFTALMOLOGO, OTROS)"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="CONSULTA DE MEDICINA INDÍGENA"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="CONSULTA DE MORBILIDAD"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="CONSULTA DE TERAPEUTA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="CONSULTA DE URGENCIA"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="CONSULTA FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA GRUPAL"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA INDIVIDUAL"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="CONSULTA GINECOLÓGICA"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="CONSULTA INTEGRAL TMO"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="CONSULTA MATRON/A"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="CONSULTA NUTRICIONAL"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="CONSULTA ODONTOLOGICA MORBILIDAD"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="CONSULTA ODONTOLOGICA TRATAMIENTO"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="CONSULTA PACIENTE AGUDO ERA"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="CONSULTA PACIENTE AGUDO IRA"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="CONSULTA PREVIA O POSTERIOR A CIRUGÍA MENOR"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="CONSULTA PSICOLOGÍCA"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="CONSULTA REHABILITACION"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="CONSULTA SOCIAL"/>
+  </concept>
+  <concept>
+    <code value="37"/>
+    <display value="CONSULTA TMO OTORRINO"/>
+  </concept>
+  <concept>
+    <code value="38"/>
+    <display value="CONSULTA VICIO DE REFRACCIÓN"/>
+  </concept>
+  <concept>
+    <code value="39"/>
+    <display value="CONSULTORÍA DE SALUD MENTAL"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="CONTACTO DE PACIENTE POR VÍA TELEFÓNICA"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="CONTROL CERO"/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="CONTROL CLIMATERIO"/>
+  </concept>
+  <concept>
+    <code value="43"/>
+    <display value="CONTROL CRONICO"/>
+  </concept>
+  <concept>
+    <code value="44"/>
+    <display value="CONTROL CRONICO ERA"/>
+  </concept>
+  <concept>
+    <code value="45"/>
+    <display value="CONTROL CRONICO IRA"/>
+  </concept>
+  <concept>
+    <code value="46"/>
+    <display value="CONTROL DE SALUD INTEGRAL DEL ADOLESCENTE"/>
+  </concept>
+  <concept>
+    <code value="47"/>
+    <display value="CONTROL DE SALUD MENTAL"/>
+  </concept>
+  <concept>
+    <code value="48"/>
+    <display value="CONTROL DE SEGUIMIENTO EMPAM"/>
+  </concept>
+  <concept>
+    <code value="49"/>
+    <display value="CONTROL DIADA"/>
+  </concept>
+  <concept>
+    <code value="50"/>
+    <display value="CONTROL GINECOLOGICO"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="CONTROL INTEGRAL MULTIMORBILIDAD"/>
+  </concept>
+  <concept>
+    <code value="52"/>
+    <display value="CONTROL NIÑO SANO"/>
+  </concept>
+  <concept>
+    <code value="53"/>
+    <display value="CONTROL PACIENTE AGUDO ERA"/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="CONTROL PACIENTE AGUDO IRA"/>
+  </concept>
+  <concept>
+    <code value="55"/>
+    <display value="CONTROL PRECONCEPCIONAL"/>
+  </concept>
+  <concept>
+    <code value="56"/>
+    <display value="CONTROL PRENATAL"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="CONTROL PUERPERA"/>
+  </concept>
+  <concept>
+    <code value="58"/>
+    <display value="CONTROL REGULACIÓN FERTILIDAD"/>
+  </concept>
+  <concept>
+    <code value="59"/>
+    <display value="CURACIÓN AVANZADA"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="CURACIONES SIMPLES"/>
+  </concept>
+  <concept>
+    <code value="61"/>
+    <display value="EDUCACIÓN FARMACÉUTICA"/>
+  </concept>
+  <concept>
+    <code value="62"/>
+    <display value="EDUCACIÓN GRUPAL"/>
+  </concept>
+  <concept>
+    <code value="63"/>
+    <display value="EDUCACION INDIVIDUAL SALUD CARDIOVASCULAR"/>
+  </concept>
+  <concept>
+    <code value="64"/>
+    <display value="ELABORACIÓN DE INFORMES A TRIBUNALES"/>
+  </concept>
+  <concept>
+    <code value="65"/>
+    <display value="ENTREVISTA FAMILIAR (Aplicación Tarjetón Familiar)"/>
+  </concept>
+  <concept>
+    <code value="66"/>
+    <display value="ESPIROMETRIA"/>
+  </concept>
+  <concept>
+    <code value="67"/>
+    <display value="ESTUDIOS DE FAMILIA"/>
+  </concept>
+  <concept>
+    <code value="68"/>
+    <display value="EVALUACIÓN DEL PIE DIABÉTICO"/>
+  </concept>
+  <concept>
+    <code value="69"/>
+    <display value="EVALUACION DISCAPACIDAD (IVADEC)"/>
+  </concept>
+  <concept>
+    <code value="70"/>
+    <display value="EVALUACIÓN INICIAL DE REHABILITACIÓN"/>
+  </concept>
+  <concept>
+    <code value="71"/>
+    <display value="EVALUACION INTERMEDIA (REHABILITACIÓN)"/>
+  </concept>
+  <concept>
+    <code value="72"/>
+    <display value="EXAMEN MEDICINA PREVENTIVA ADULTO (EMPA)"/>
+  </concept>
+  <concept>
+    <code value="73"/>
+    <display value="FLUORACIÓN TOPICA"/>
+  </concept>
+  <concept>
+    <code value="74"/>
+    <display value="FLUORACIÓN TOPICA"/>
+  </concept>
+  <concept>
+    <code value="75"/>
+    <display value="INGRESO A SALA DE ESTIMULACIÓN"/>
+  </concept>
+  <concept>
+    <code value="76"/>
+    <display value="INGRESO CLIMATERIO"/>
+  </concept>
+  <concept>
+    <code value="77"/>
+    <display value="INGRESO CRONICO"/>
+  </concept>
+  <concept>
+    <code value="78"/>
+    <display value="INGRESO ERA"/>
+  </concept>
+  <concept>
+    <code value="79"/>
+    <display value="INGRESO FONOAUDIOLOGÍA"/>
+  </concept>
+  <concept>
+    <code value="80"/>
+    <display value="INGRESO IRA"/>
+  </concept>
+  <concept>
+    <code value="81"/>
+    <display value="INGRESO MULTIMORBILIDAD"/>
+  </concept>
+  <concept>
+    <code value="82"/>
+    <display value="INGRESO PMAMA"/>
+  </concept>
+  <concept>
+    <code value="83"/>
+    <display value="INGRESO PRENATAL"/>
+  </concept>
+  <concept>
+    <code value="84"/>
+    <display value="INGRESO PROGRAMA CERO"/>
+  </concept>
+  <concept>
+    <code value="85"/>
+    <display value="INGRESO PROGRAMA SALUD MENTAL"/>
+  </concept>
+  <concept>
+    <code value="86"/>
+    <display value="INGRESO REGULACIÓN FERTILIDAD"/>
+  </concept>
+  <concept>
+    <code value="87"/>
+    <display value="INTERVENCIÓN EN CRISIS"/>
+  </concept>
+  <concept>
+    <code value="88"/>
+    <display value="INTERVENCION PSICOSOCIAL DE GRUPOS"/>
+  </concept>
+  <concept>
+    <code value="89"/>
+    <display value="INTERVENCION PSICOSOCIAL GRUPAL"/>
+  </concept>
+  <concept>
+    <code value="90"/>
+    <display value="OTRAS CONSULTAS TMO"/>
+  </concept>
+  <concept>
+    <code value="91"/>
+    <display value="PAP"/>
+  </concept>
+  <concept>
+    <code value="92"/>
+    <display value="PESQUISA HTA"/>
+  </concept>
+  <concept>
+    <code value="93"/>
+    <display value="PROCEDIMIENTOS"/>
+  </concept>
+  <concept>
+    <code value="94"/>
+    <display value="PROGRAMA GES ODONTOLOGICO"/>
+  </concept>
+  <concept>
+    <code value="95"/>
+    <display value="PROGRAMA MEJORAMIENTO DEL ACCESO A LA ATENCIÓN ODONTOLÓGICA"/>
+  </concept>
+  <concept>
+    <code value="96"/>
+    <display value="PROGRAMA ODONTOLÓGICO INTEGRAL"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="PULIDO CORONARIO Y DESTARTRAJE SUPRAGINGIVAL"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="REALIZACIÓN EMPAM"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="SEGUIMIENTO DE CASOS"/>
+  </concept>
+  <concept>
+    <code value="100"/>
+    <display value="SEGUIMIENTO DE TEPSI"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+    <display value="SEGUMIENTO A DISTANCIA MULTIMORBILIDAD"/>
+  </concept>
+  <concept>
+    <code value="102"/>
+    <display value="SESION DE REHABILITACION INTEGRAL"/>
+  </concept>
+  <concept>
+    <code value="103"/>
+    <display value="SESION DE REHABILITACION PULMONAR"/>
+  </concept>
+  <concept>
+    <code value="104"/>
+    <display value="TALLER EN EDUCACIÓN ESPECIAL EN ADULTO MAYOR"/>
+  </concept>
+  <concept>
+    <code value="105"/>
+    <display value="TALLER GRUPAL"/>
+  </concept>
+  <concept>
+    <code value="106"/>
+    <display value="TALLER GRUPAL PMAMA"/>
+  </concept>
+  <concept>
+    <code value="107"/>
+    <display value="TAMIZAJE PARA EVALUAR RIESGO DE CONSUMO DE ALCOHOL, TABACO Y OTRAS DROGAS"/>
+  </concept>
+  <concept>
+    <code value="108"/>
+    <display value="TELECLIMATERIO"/>
+  </concept>
+  <concept>
+    <code value="109"/>
+    <display value="TEST DE MARCHA"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+    <display value="TEST DE PROVOCACIÓN CON EJERCICIO"/>
+  </concept>
+  <concept>
+    <code value="111"/>
+    <display value="TOMA DE ECOGRAFIA"/>
+  </concept>
+  <concept>
+    <code value="112"/>
+    <display value="TOMA DE ELECTROCARDIOGRAMA"/>
+  </concept>
+  <concept>
+    <code value="113"/>
+    <display value="TOMA DE ESPIROMETRIA"/>
+  </concept>
+  <concept>
+    <code value="114"/>
+    <display value="TOMA DE MAMOGRAFIA"/>
+  </concept>
+  <concept>
+    <code value="115"/>
+    <display value="TOMA DE MUESTRAS"/>
+  </concept>
+  <concept>
+    <code value="116"/>
+    <display value="TOMA DE RADIOGRAFIA"/>
+  </concept>
+  <concept>
+    <code value="117"/>
+    <display value="VISITA DOMICILIARIA INTEGRAL"/>
+  </concept>
+  <concept>
+    <code value="118"/>
+    <display value="VISITAS CON FINES DE TRATAMIENTOS Y/O PROCEDIMIENTOS EN DOMICILIO"/>
+  </concept>
+</CodeSystem>

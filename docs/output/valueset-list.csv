@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSCategorias,0.4.0,active,,VSCategorias,VS Prestaciones,"Prestaciones",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrestaciones,0.4.0,active,,VSPrestaciones,VS Prestaciones,"Prestaciones",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrevision,0.4.0,active,,VSPrevision,VS Prevision,"Previsión del paciente",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSServicios,0.4.0,active,,VSServicios,VS SERVICIOS,"Servicio que dara el prestador",,"Internal"

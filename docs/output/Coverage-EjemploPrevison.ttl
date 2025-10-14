@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/Coverage/EjemploPrevison> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploPrevison"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prevision"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prevision>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Cobertura EjemploPrevison</b></p><a name=\"EjemploPrevison\"> </a><a name=\"hcEjemploPrevison\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Prevision.html\">Prevision</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision 01}\">FONASA</span></p><p><b>beneficiary</b>: <a href=\"Patient-EjemploPaciente1.html\">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>payor</b>: Tramo B</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "01" ] ;
+       fhir:display [ fhir:v "FONASA" ]
+     ] )
+  ] ; # 
+  fhir:beneficiary [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Patient/EjemploPaciente1> ;
+     fhir:reference [ fhir:v "Patient/EjemploPaciente1" ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:display [ fhir:v "Tramo B" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

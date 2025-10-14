@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CS Prestaciones - Guía de Implementación para la gestión de citas médicas enfocado en la APS v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.19"}
+    h3,h4,h5,h6{--heading-prefix:"5.19"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación para la gestión de citas médicas enfocado en la APS</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - ci-build
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="Objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="CasosDeUsos.html">Casos De Usos</a>
+  </li>
+  <li>
+    <a href="Seguridad.html">Seguridad</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CS Prestaciones</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación para la gestión de citas médicas enfocado en la APS - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interoperabilidad.minsal.cl/fhir/ig/agenda/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-CSPrestaciones.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-CSPrestaciones.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-CSPrestaciones.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: CS Prestaciones
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones|0.4.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-10-13
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CSPrestaciones</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Codigos de las prestaciones</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-VSPrestaciones.html">VSPrestaciones</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="CSPrestaciones"> </a><a name="hcCSPrestaciones"> </a><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrestaciones</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">1<a name="CSPrestaciones-1"> </a></td>
+<td>OTRAS CONSULTAS (ABREVIADAS)</td></tr>
+<tr><td style="white-space:nowrap">2<a name="CSPrestaciones-2"> </a></td>
+<td>APLICACIÓN DE SELLANTES</td></tr>
+<tr><td style="white-space:nowrap">3<a name="CSPrestaciones-3"> </a></td>
+<td>APLICACIÓN DE TEPSI</td></tr>
+<tr><td style="white-space:nowrap">4<a name="CSPrestaciones-4"> </a></td>
+<td>APLICACIÓN EEDP</td></tr>
+<tr><td style="white-space:nowrap">5<a name="CSPrestaciones-5"> </a></td>
+<td>ATENCIÓN DE PODOLOGIA</td></tr>
+<tr><td style="white-space:nowrap">6<a name="CSPrestaciones-6"> </a></td>
+<td>ATENCIÓN EN SALA DE ESTIMULACIÓN</td></tr>
+<tr><td style="white-space:nowrap">7<a name="CSPrestaciones-7"> </a></td>
+<td>ATENCIÓN FARMACEÚTICA</td></tr>
+<tr><td style="white-space:nowrap">8<a name="CSPrestaciones-8"> </a></td>
+<td>ATENCIÓN POR SALUD DIGITAL</td></tr>
+<tr><td style="white-space:nowrap">9<a name="CSPrestaciones-9"> </a></td>
+<td>ATENCIÓN PROFESIONAL POR VIDEOLLAMADA</td></tr>
+<tr><td style="white-space:nowrap">10<a name="CSPrestaciones-10"> </a></td>
+<td>CLINICA O CONSULTA DE LACTANCIA MATERNA</td></tr>
+<tr><td style="white-space:nowrap">11<a name="CSPrestaciones-11"> </a></td>
+<td>CONSEJERIA FAMILIAR</td></tr>
+<tr><td style="white-space:nowrap">12<a name="CSPrestaciones-12"> </a></td>
+<td>CONSEJERIA INDIVIDUAL</td></tr>
+<tr><td style="white-space:nowrap">13<a name="CSPrestaciones-13"> </a></td>
+<td>CONSEJERIA LACTANCIA MATERNA</td></tr>
+<tr><td style="white-space:nowrap">14<a name="CSPrestaciones-14"> </a></td>
+<td>CONSULTA ALTO RIESGO OBSTÉTRICO</td></tr>
+<tr><td style="white-space:nowrap">15<a name="CSPrestaciones-15"> </a></td>
+<td>CONSULTA CIRUGIA MENOR (PROCEDIMIENTO)</td></tr>
+<tr><td style="white-space:nowrap">16<a name="CSPrestaciones-16"> </a></td>
+<td>CONSULTA DE ENFERMERIA</td></tr>
+<tr><td style="white-space:nowrap">17<a name="CSPrestaciones-17"> </a></td>
+<td>CONSULTA DE ESPECIALIDAD (ODONTÓLOGO, OTORRINO, OFTALMOLOGO, OTROS)</td></tr>
+<tr><td style="white-space:nowrap">18<a name="CSPrestaciones-18"> </a></td>
+<td>CONSULTA DE MEDICINA INDÍGENA</td></tr>
+<tr><td style="white-space:nowrap">19<a name="CSPrestaciones-19"> </a></td>
+<td>CONSULTA DE MORBILIDAD</td></tr>
+<tr><td style="white-space:nowrap">20<a name="CSPrestaciones-20"> </a></td>
+<td>CONSULTA DE TERAPEUTA OCUPACIONAL</td></tr>
+<tr><td style="white-space:nowrap">21<a name="CSPrestaciones-21"> </a></td>
+<td>CONSULTA DE URGENCIA</td></tr>
+<tr><td style="white-space:nowrap">22<a name="CSPrestaciones-22"> </a></td>
+<td>CONSULTA FONOAUDIOLOGIA</td></tr>
+<tr><td style="white-space:nowrap">23<a name="CSPrestaciones-23"> </a></td>
+<td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA GRUPAL</td></tr>
+<tr><td style="white-space:nowrap">24<a name="CSPrestaciones-24"> </a></td>
+<td>CONSULTA FONOAUDIOLÓGICA DE REHABILITACIÓN AUDITIVA INDIVIDUAL</td></tr>
+<tr><td style="white-space:nowrap">25<a name="CSPrestaciones-25"> </a></td>
+<td>CONSULTA GINECOLÓGICA</td></tr>
+<tr><td style="white-space:nowrap">26<a name="CSPrestaciones-26"> </a></td>
+<td>CONSULTA INTEGRAL TMO</td></tr>
+<tr><td style="white-space:nowrap">27<a name="CSPrestaciones-27"> </a></td>
+<td>CONSULTA MATRON/A</td></tr>
+<tr><td style="white-space:nowrap">28<a name="CSPrestaciones-28"> </a></td>
+<td>CONSULTA NUTRICIONAL</td></tr>
+<tr><td style="white-space:nowrap">29<a name="CSPrestaciones-29"> </a></td>
+<td>CONSULTA ODONTOLOGICA MORBILIDAD</td></tr>
+<tr><td style="white-space:nowrap">30<a name="CSPrestaciones-30"> </a></td>
+<td>CONSULTA ODONTOLOGICA TRATAMIENTO</td></tr>
+<tr><td style="white-space:nowrap">31<a name="CSPrestaciones-31"> </a></td>
+<td>CONSULTA PACIENTE AGUDO ERA</td></tr>
+<tr><td style="white-space:nowrap">32<a name="CSPrestaciones-32"> </a></td>
+<td>CONSULTA PACIENTE AGUDO IRA</td></tr>
+<tr><td style="white-space:nowrap">33<a name="CSPrestaciones-33"> </a></td>
+<td>CONSULTA PREVIA O POSTERIOR A CIRUGÍA MENOR</td></tr>
+<tr><td style="white-space:nowrap">34<a name="CSPrestaciones-34"> </a></td>
+<td>CONSULTA PSICOLOGÍCA</td></tr>
+<tr><td style="white-space:nowrap">35<a name="CSPrestaciones-35"> </a></td>
+<td>CONSULTA REHABILITACION</td></tr>
+<tr><td style="white-space:nowrap">36<a name="CSPrestaciones-36"> </a></td>
+<td>CONSULTA SOCIAL</td></tr>
+<tr><td style="white-space:nowrap">37<a name="CSPrestaciones-37"> </a></td>
+<td>CONSULTA TMO OTORRINO</td></tr>
+<tr><td style="white-space:nowrap">38<a name="CSPrestaciones-38"> </a></td>
+<td>CONSULTA VICIO DE REFRACCIÓN</td></tr>
+<tr><td style="white-space:nowrap">39<a name="CSPrestaciones-39"> </a></td>
+<td>CONSULTORÍA DE SALUD MENTAL</td></tr>
+<tr><td style="white-space:nowrap">40<a name="CSPrestaciones-40"> </a></td>
+<td>CONTACTO DE PACIENTE POR VÍA TELEFÓNICA</td></tr>
+<tr><td style="white-space:nowrap">41<a name="CSPrestaciones-41"> </a></td>
+<td>CONTROL CERO</td></tr>
+<tr><td style="white-space:nowrap">42<a name="CSPrestaciones-42"> </a></td>
+<td>CONTROL CLIMATERIO</td></tr>
+<tr><td style="white-space:nowrap">43<a name="CSPrestaciones-43"> </a></td>
+<td>CONTROL CRONICO</td></tr>
+<tr><td style="white-space:nowrap">44<a name="CSPrestaciones-44"> </a></td>
+<td>CONTROL CRONICO ERA</td></tr>
+<tr><td style="white-space:nowrap">45<a name="CSPrestaciones-45"> </a></td>
+<td>CONTROL CRONICO IRA</td></tr>
+<tr><td style="white-space:nowrap">46<a name="CSPrestaciones-46"> </a></td>
+<td>CONTROL DE SALUD INTEGRAL DEL ADOLESCENTE</td></tr>
+<tr><td style="white-space:nowrap">47<a name="CSPrestaciones-47"> </a></td>
+<td>CONTROL DE SALUD MENTAL</td></tr>
+<tr><td style="white-space:nowrap">48<a name="CSPrestaciones-48"> </a></td>
+<td>CONTROL DE SEGUIMIENTO EMPAM</td></tr>
+<tr><td style="white-space:nowrap">49<a name="CSPrestaciones-49"> </a></td>
+<td>CONTROL DIADA</td></tr>
+<tr><td style="white-space:nowrap">50<a name="CSPrestaciones-50"> </a></td>
+<td>CONTROL GINECOLOGICO</td></tr>
+<tr><td style="white-space:nowrap">51<a name="CSPrestaciones-51"> </a></td>
+<td>CONTROL INTEGRAL MULTIMORBILIDAD</td></tr>
+<tr><td style="white-space:nowrap">52<a name="CSPrestaciones-52"> </a></td>
+<td>CONTROL NIÑO SANO</td></tr>
+<tr><td style="white-space:nowrap">53<a name="CSPrestaciones-53"> </a></td>
+<td>CONTROL PACIENTE AGUDO ERA</td></tr>
+<tr><td style="white-space:nowrap">54<a name="CSPrestaciones-54"> </a></td>
+<td>CONTROL PACIENTE AGUDO IRA</td></tr>
+<tr><td style="white-space:nowrap">55<a name="CSPrestaciones-55"> </a></td>
+<td>CONTROL PRECONCEPCIONAL</td></tr>
+<tr><td style="white-space:nowrap">56<a name="CSPrestaciones-56"> </a></td>
+<td>CONTROL PRENATAL</td></tr>
+<tr><td style="white-space:nowrap">57<a name="CSPrestaciones-57"> </a></td>
+<td>CONTROL PUERPERA</td></tr>
+<tr><td style="white-space:nowrap">58<a name="CSPrestaciones-58"> </a></td>
+<td>CONTROL REGULACIÓN FERTILIDAD</td></tr>
+<tr><td style="white-space:nowrap">59<a name="CSPrestaciones-59"> </a></td>
+<td>CURACIÓN AVANZADA</td></tr>
+<tr><td style="white-space:nowrap">60<a name="CSPrestaciones-60"> </a></td>
+<td>CURACIONES SIMPLES</td></tr>
+<tr><td style="white-space:nowrap">61<a name="CSPrestaciones-61"> </a></td>
+<td>EDUCACIÓN FARMACÉUTICA</td></tr>
+<tr><td style="white-space:nowrap">62<a name="CSPrestaciones-62"> </a></td>
+<td>EDUCACIÓN GRUPAL</td></tr>
+<tr><td style="white-space:nowrap">63<a name="CSPrestaciones-63"> </a></td>
+<td>EDUCACION INDIVIDUAL SALUD CARDIOVASCULAR</td></tr>
+<tr><td style="white-space:nowrap">64<a name="CSPrestaciones-64"> </a></td>
+<td>ELABORACIÓN DE INFORMES A TRIBUNALES</td></tr>
+<tr><td style="white-space:nowrap">65<a name="CSPrestaciones-65"> </a></td>
+<td>ENTREVISTA FAMILIAR (Aplicación Tarjetón Familiar)</td></tr>
+<tr><td style="white-space:nowrap">66<a name="CSPrestaciones-66"> </a></td>
+<td>ESPIROMETRIA</td></tr>
+<tr><td style="white-space:nowrap">67<a name="CSPrestaciones-67"> </a></td>
+<td>ESTUDIOS DE FAMILIA</td></tr>
+<tr><td style="white-space:nowrap">68<a name="CSPrestaciones-68"> </a></td>
+<td>EVALUACIÓN DEL PIE DIABÉTICO</td></tr>
+<tr><td style="white-space:nowrap">69<a name="CSPrestaciones-69"> </a></td>
+<td>EVALUACION DISCAPACIDAD (IVADEC)</td></tr>
+<tr><td style="white-space:nowrap">70<a name="CSPrestaciones-70"> </a></td>
+<td>EVALUACIÓN INICIAL DE REHABILITACIÓN</td></tr>
+<tr><td style="white-space:nowrap">71<a name="CSPrestaciones-71"> </a></td>
+<td>EVALUACION INTERMEDIA (REHABILITACIÓN)</td></tr>
+<tr><td style="white-space:nowrap">72<a name="CSPrestaciones-72"> </a></td>
+<td>EXAMEN MEDICINA PREVENTIVA ADULTO (EMPA)</td></tr>
+<tr><td style="white-space:nowrap">73<a name="CSPrestaciones-73"> </a></td>
+<td>FLUORACIÓN TOPICA</td></tr>
+<tr><td style="white-space:nowrap">74<a name="CSPrestaciones-74"> </a></td>
+<td>FLUORACIÓN TOPICA</td></tr>
+<tr><td style="white-space:nowrap">75<a name="CSPrestaciones-75"> </a></td>
+<td>INGRESO A SALA DE ESTIMULACIÓN</td></tr>
+<tr><td style="white-space:nowrap">76<a name="CSPrestaciones-76"> </a></td>
+<td>INGRESO CLIMATERIO</td></tr>
+<tr><td style="white-space:nowrap">77<a name="CSPrestaciones-77"> </a></td>
+<td>INGRESO CRONICO</td></tr>
+<tr><td style="white-space:nowrap">78<a name="CSPrestaciones-78"> </a></td>
+<td>INGRESO ERA</td></tr>
+<tr><td style="white-space:nowrap">79<a name="CSPrestaciones-79"> </a></td>
+<td>INGRESO FONOAUDIOLOGÍA</td></tr>
+<tr><td style="white-space:nowrap">80<a name="CSPrestaciones-80"> </a></td>
+<td>INGRESO IRA</td></tr>
+<tr><td style="white-space:nowrap">81<a name="CSPrestaciones-81"> </a></td>
+<td>INGRESO MULTIMORBILIDAD</td></tr>
+<tr><td style="white-space:nowrap">82<a name="CSPrestaciones-82"> </a></td>
+<td>INGRESO PMAMA</td></tr>
+<tr><td style="white-space:nowrap">83<a name="CSPrestaciones-83"> </a></td>
+<td>INGRESO PRENATAL</td></tr>
+<tr><td style="white-space:nowrap">84<a name="CSPrestaciones-84"> </a></td>
+<td>INGRESO PROGRAMA CERO</td></tr>
+<tr><td style="white-space:nowrap">85<a name="CSPrestaciones-85"> </a></td>
+<td>INGRESO PROGRAMA SALUD MENTAL</td></tr>
+<tr><td style="white-space:nowrap">86<a name="CSPrestaciones-86"> </a></td>
+<td>INGRESO REGULACIÓN FERTILIDAD</td></tr>
+<tr><td style="white-space:nowrap">87<a name="CSPrestaciones-87"> </a></td>
+<td>INTERVENCIÓN EN CRISIS</td></tr>
+<tr><td style="white-space:nowrap">88<a name="CSPrestaciones-88"> </a></td>
+<td>INTERVENCION PSICOSOCIAL DE GRUPOS</td></tr>
+<tr><td style="white-space:nowrap">89<a name="CSPrestaciones-89"> </a></td>
+<td>INTERVENCION PSICOSOCIAL GRUPAL</td></tr>
+<tr><td style="white-space:nowrap">90<a name="CSPrestaciones-90"> </a></td>
+<td>OTRAS CONSULTAS TMO</td></tr>
+<tr><td style="white-space:nowrap">91<a name="CSPrestaciones-91"> </a></td>
+<td>PAP</td></tr>
+<tr><td style="white-space:nowrap">92<a name="CSPrestaciones-92"> </a></td>
+<td>PESQUISA HTA</td></tr>
+<tr><td style="white-space:nowrap">93<a name="CSPrestaciones-93"> </a></td>
+<td>PROCEDIMIENTOS</td></tr>
+<tr><td style="white-space:nowrap">94<a name="CSPrestaciones-94"> </a></td>
+<td>PROGRAMA GES ODONTOLOGICO</td></tr>
+<tr><td style="white-space:nowrap">95<a name="CSPrestaciones-95"> </a></td>
+<td>PROGRAMA MEJORAMIENTO DEL ACCESO A LA ATENCIÓN ODONTOLÓGICA</td></tr>
+<tr><td style="white-space:nowrap">96<a name="CSPrestaciones-96"> </a></td>
+<td>PROGRAMA ODONTOLÓGICO INTEGRAL</td></tr>
+<tr><td style="white-space:nowrap">97<a name="CSPrestaciones-97"> </a></td>
+<td>PULIDO CORONARIO Y DESTARTRAJE SUPRAGINGIVAL</td></tr>
+<tr><td style="white-space:nowrap">98<a name="CSPrestaciones-98"> </a></td>
+<td>REALIZACIÓN EMPAM</td></tr>
+<tr><td style="white-space:nowrap">99<a name="CSPrestaciones-99"> </a></td>
+<td>SEGUIMIENTO DE CASOS</td></tr>
+<tr><td style="white-space:nowrap">100<a name="CSPrestaciones-100"> </a></td>
+<td>SEGUIMIENTO DE TEPSI</td></tr>
+<tr><td style="white-space:nowrap">101<a name="CSPrestaciones-101"> </a></td>
+<td>SEGUMIENTO A DISTANCIA MULTIMORBILIDAD</td></tr>
+<tr><td style="white-space:nowrap">102<a name="CSPrestaciones-102"> </a></td>
+<td>SESION DE REHABILITACION INTEGRAL</td></tr>
+<tr><td style="white-space:nowrap">103<a name="CSPrestaciones-103"> </a></td>
+<td>SESION DE REHABILITACION PULMONAR</td></tr>
+<tr><td style="white-space:nowrap">104<a name="CSPrestaciones-104"> </a></td>
+<td>TALLER EN EDUCACIÓN ESPECIAL EN ADULTO MAYOR</td></tr>
+<tr><td style="white-space:nowrap">105<a name="CSPrestaciones-105"> </a></td>
+<td>TALLER GRUPAL</td></tr>
+<tr><td style="white-space:nowrap">106<a name="CSPrestaciones-106"> </a></td>
+<td>TALLER GRUPAL PMAMA</td></tr>
+<tr><td style="white-space:nowrap">107<a name="CSPrestaciones-107"> </a></td>
+<td>TAMIZAJE PARA EVALUAR RIESGO DE CONSUMO DE ALCOHOL, TABACO Y OTRAS DROGAS</td></tr>
+<tr><td style="white-space:nowrap">108<a name="CSPrestaciones-108"> </a></td>
+<td>TELECLIMATERIO</td></tr>
+<tr><td style="white-space:nowrap">109<a name="CSPrestaciones-109"> </a></td>
+<td>TEST DE MARCHA</td></tr>
+<tr><td style="white-space:nowrap">110<a name="CSPrestaciones-110"> </a></td>
+<td>TEST DE PROVOCACIÓN CON EJERCICIO</td></tr>
+<tr><td style="white-space:nowrap">111<a name="CSPrestaciones-111"> </a></td>
+<td>TOMA DE ECOGRAFIA</td></tr>
+<tr><td style="white-space:nowrap">112<a name="CSPrestaciones-112"> </a></td>
+<td>TOMA DE ELECTROCARDIOGRAMA</td></tr>
+<tr><td style="white-space:nowrap">113<a name="CSPrestaciones-113"> </a></td>
+<td>TOMA DE ESPIROMETRIA</td></tr>
+<tr><td style="white-space:nowrap">114<a name="CSPrestaciones-114"> </a></td>
+<td>TOMA DE MAMOGRAFIA</td></tr>
+<tr><td style="white-space:nowrap">115<a name="CSPrestaciones-115"> </a></td>
+<td>TOMA DE MUESTRAS</td></tr>
+<tr><td style="white-space:nowrap">116<a name="CSPrestaciones-116"> </a></td>
+<td>TOMA DE RADIOGRAFIA</td></tr>
+<tr><td style="white-space:nowrap">117<a name="CSPrestaciones-117"> </a></td>
+<td>VISITA DOMICILIARIA INTEGRAL</td></tr>
+<tr><td style="white-space:nowrap">118<a name="CSPrestaciones-118"> </a></td>
+<td>VISITAS CON FINES DE TRATAMIENTOS Y/O PROCEDIMIENTOS EN DOMICILIO</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.agenda#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 23:30-0300">2025-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> 
+<!-- <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/agenda"></a> -->
+</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

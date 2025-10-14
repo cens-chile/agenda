@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="EjemploPrevison"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prevision"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Cobertura EjemploPrevison</b></p><a name="EjemploPrevison"> </a><a name="hcEjemploPrevison"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Prevision.html">Prevision</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision 01}">FONASA</span></p><p><b>beneficiary</b>: <a href="Patient-EjemploPaciente1.html">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>payor</b>: Tramo B</p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="https://interoperabilidad.minsal.cl/fhir/ig/agenda/CodeSystem/CSPrevision"/>
+      <code value="01"/>
+      <display value="FONASA"/>
+    </coding>
+  </type>
+  <beneficiary>
+    <reference value="Patient/EjemploPaciente1"/>
+  </beneficiary>
+  <payor>
+    <display value="Tramo B"/>
+  </payor>
+</Coverage>

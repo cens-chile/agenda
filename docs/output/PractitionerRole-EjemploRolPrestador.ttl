@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/PractitionerRole/EjemploRolPrestador> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploRolPrestador"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/RolPrestador"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/RolPrestador>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RolProfesional EjemploRolPrestador</b></p><a name=\"EjemploRolPrestador\"> </a><a name=\"hcEjemploRolPrestador\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RolPrestador.html\">Perfil del Rol del Prestador</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner-EjemploPrestador1.html\">Practitioner Cuevas Antonia </a></p><p><b>organization</b>: <a href=\"Organization-EjemploOrganizacion.html\">Organization CESFAM Barón</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Practitioner/EjemploPrestador1> ;
+     fhir:reference [ fhir:v "Practitioner/EjemploPrestador1" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Organization/EjemploOrganizacion> ;
+     fhir:reference [ fhir:v "Organization/EjemploOrganizacion" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

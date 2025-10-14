@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/Bundle/BundResp> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BundResp"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/BundleRespuesta"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/BundleRespuesta>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "BundResp" ]
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:timestamp [ fhir:v "2024-07-26T14:15:00-03:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:8a7bac00-3b61-4846-b32f-ad1ec3c46a2c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:8a7bac00-3b61-4846-b32f-ad1ec3c46a2c> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "AppointmentResponse/"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://server1/fhir/Appointment/EjemploCita2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://server1/fhir/Appointment/EjemploCita2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Appointment/1"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<urn:uuid:8a7bac00-3b61-4846-b32f-ad1ec3c46a2c> a fhir:AppointmentResponse ;
+  fhir:id [ fhir:v "EjemploRespuestaCita2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AppointmentResponse_EjemploRespuestaCita2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CitaRespuesta EjemploRespuestaCita2</b></p><a name=\"EjemploRespuestaCita2\"> </a><a name=\"hcEjemploRespuestaCita2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CitaRespuesta.html\">Perfil de la Respuesta a la cita.</a></p></div><p><b>appointment</b>: <a href=\"Appointment-EjemploCita2.html\">Appointment: extension = Comentario de la cita; status = booked; specialty = Adult mental illness - specialty (qualifier value); start = 2024-07-25 15:30:00-0300; end = 2024-07-25 13:10:00-0300</a></p><p><b>actor</b>: <a href=\"Patient-EjemploPaciente2.html\">Maria Camila Ospina  (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)</a></p><p><b>participantStatus</b>: Accepted</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:appointment [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Appointment/EjemploCita2> ;
+     fhir:reference [ fhir:v "Appointment/EjemploCita2" ]
+  ] ; # 
+  fhir:actor [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Patient/EjemploPaciente2> ;
+     fhir:reference [ fhir:v "Patient/EjemploPaciente2" ]
+  ] ; # 
+  fhir:participantStatus [ fhir:v "accepted"] . # 
+
+<https://server1/fhir/Appointment/EjemploCita2> a fhir:Appointment ;
+  fhir:id [ fhir:v "EjemploCita2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Cita"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Cita>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Appointment_EjemploCita2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Cita EjemploCita2</b></p><a name=\"EjemploCita2\"> </a><a name=\"hcEjemploCita2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Cita.html\">Perfil Cita</a></p></div><p><b>Apellido Servicio</b>: Comentario de la cita</p><p><b>status</b>: Booked</p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct 408467006}\">Adult mental illness - specialty (qualifier value)</span></p><p><b>start</b>: 2024-07-25 15:30:00-0300</p><p><b>end</b>: 2024-07-25 13:10:00-0300</p><p><b>basedOn</b>: <a href=\"ServiceRequest-EjemploSolicitudServicio2.html\">ServiceRequest: status = active; intent = order; priority = routine; authoredOn = 2024-07-20 12:00:00-0300</a></p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-EjemploPaciente2.html\">Maria Camila Ospina  (no stated gender), DoB: 1999-04-12 ( 25.634.739-0)</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Practitioner-EjemploPrestador1.html\">Practitioner Cuevas Antonia </a></p><p><b>required</b>: Optional</p><p><b>status</b>: Accepted</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/ApellidoServicio"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Comentario de la cita"
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:408467006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408467006" ]
+     ] )
+  ] ) ; # 
+  fhir:start [ fhir:v "2024-07-25T15:30:00-03:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2024-07-25T13:10:00-03:00"^^xsd:dateTime] ; # 
+  fhir:basedOn ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/ServiceRequest/EjemploSolicitudServicio2> ;
+     fhir:reference [ fhir:v "ServiceRequest/EjemploSolicitudServicio2" ]
+  ] ) ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Patient/EjemploPaciente2> ;
+       fhir:reference [ fhir:v "Patient/EjemploPaciente2" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Practitioner/EjemploPrestador1> ;
+       fhir:reference [ fhir:v "Practitioner/EjemploPrestador1" ]
+     ] ;
+     fhir:required [ fhir:v "optional" ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

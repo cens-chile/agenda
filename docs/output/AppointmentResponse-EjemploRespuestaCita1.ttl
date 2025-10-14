@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/agenda/AppointmentResponse/EjemploRespuestaCita1> a fhir:AppointmentResponse ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploRespuestaCita1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CitaRespuesta EjemploRespuestaCita1</b></p><a name=\"EjemploRespuestaCita1\"> </a><a name=\"hcEjemploRespuestaCita1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CitaRespuesta.html\">Perfil de la Respuesta a la cita.</a></p></div><p><b>appointment</b>: <a href=\"Appointment-EjemploCita1.html\">Appointment: extension = Comentario de la cita; status = booked; specialty = Adult mental illness - specialty (qualifier value); start = 2024-07-25 12:30:00-0300; end = 2024-07-25 12:50:00-0300</a></p><p><b>actor</b>: <a href=\"Patient-EjemploPaciente1.html\">Valentina Daniela Contreras  (no stated gender), DoB: 2001-02-10 ( 20.706.399-1)</a></p><p><b>participantStatus</b>: Accepted</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:appointment [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Appointment/EjemploCita1> ;
+     fhir:reference [ fhir:v "Appointment/EjemploCita1" ]
+  ] ; # 
+  fhir:actor [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/agenda/Patient/EjemploPaciente1> ;
+     fhir:reference [ fhir:v "Patient/EjemploPaciente1" ]
+  ] ; # 
+  fhir:participantStatus [ fhir:v "accepted"] . # 
+
+# -------------------------------------------------------------------------------------
+
