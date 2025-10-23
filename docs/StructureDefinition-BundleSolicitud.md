@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/BundleSolicitud | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:BundleSolicitud |
+| Draft as of 2025-10-23 | *Computable Name*:BundleSolicitud |
 
  
 Este Perfil describe como debe ser el recurso Bundle que permite transportar los recursos asociados a la solicitud de una hora médica 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-BundleSolicitud.csv)
   "name" : "BundleSolicitud",
   "title" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

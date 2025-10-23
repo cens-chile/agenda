@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/CitaRespuesta | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:CitaRespuesta |
+| Draft as of 2025-10-23 | *Computable Name*:CitaRespuesta |
 
  
 Una respuesta a una solicitud de cita para un paciente y/o médico(s), como una confirmación o un rechazo. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-CitaRespuesta.csv), 
   "name" : "CitaRespuesta",
   "title" : "Perfil de la Respuesta a la cita.",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

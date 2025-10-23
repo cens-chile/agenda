@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSCategorias | *Version*:0.4.0 |
-| Active as of 2025-10-13 | *Computable Name*:VSCategorias |
+| Active as of 2025-10-23 | *Computable Name*:VSCategorias |
 
  
 Prestaciones 
@@ -53,7 +53,7 @@ Prestaciones
   "title" : "VS Prestaciones",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

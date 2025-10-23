@@ -71,8 +71,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
-      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica "
+      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
+      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -100,9 +100,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
+      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
       "StructureDefinition-Prestador.html" : "Prestador",
-      "StructureDefinition-PacienteAgenda.html" : "Paciente",
-      "StructureDefinition-Organizacion.html" : "Perfil de la Organización"
+      "StructureDefinition-PacienteAgenda.html" : "Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -116,9 +116,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
+      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
       "StructureDefinition-Prestador.html" : "Prestador",
-      "StructureDefinition-PacienteAgenda.html" : "Paciente",
-      "StructureDefinition-Organizacion.html" : "Perfil de la Organización"
+      "StructureDefinition-PacienteAgenda.html" : "Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -250,8 +250,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
-      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica "
+      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
+      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -265,8 +265,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-Prestador.html" : "Prestador",
-      "StructureDefinition-Organizacion.html" : "Perfil de la Organización"
+      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
+      "StructureDefinition-Prestador.html" : "Prestador"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -280,9 +280,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
       "StructureDefinition-Prestador.html" : "Prestador",
-      "StructureDefinition-PacienteAgenda.html" : "Paciente",
-      "StructureDefinition-Organizacion.html" : "Perfil de la Organización"
+      "StructureDefinition-PacienteAgenda.html" : "Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -296,16 +296,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
+      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
+      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
+      "StructureDefinition-Prevision.html" : "Prevision",
+      "StructureDefinition-RolPrestador.html" : "Perfil del Rol del Prestador",
       "StructureDefinition-Cita.html" : "Perfil Cita",
       "StructureDefinition-CitaRespuesta.html" : "Perfil de la Respuesta a la cita.",
-      "StructureDefinition-Prevision.html" : "Prevision",
-      "StructureDefinition-Prestador.html" : "Prestador",
+      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio",
       "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
-      "StructureDefinition-RolPrestador.html" : "Perfil del Rol del Prestador",
-      "StructureDefinition-PacienteAgenda.html" : "Paciente",
-      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
-      "StructureDefinition-Organizacion.html" : "Perfil de la Organización",
-      "StructureDefinition-SolicitudServicio.html" : "Perfil de la Solicitud del Servicio"
+      "StructureDefinition-Prestador.html" : "Prestador",
+      "StructureDefinition-PacienteAgenda.html" : "Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -523,8 +523,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-Prestador.html" : "Prestador",
       "StructureDefinition-RolPrestador.html" : "Perfil del Rol del Prestador",
+      "StructureDefinition-Prestador.html" : "Prestador",
       "StructureDefinition-PacienteAgenda.html" : "Paciente"
     },
     {
@@ -539,8 +539,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
-      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica "
+      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
+      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-category",

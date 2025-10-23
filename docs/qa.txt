@@ -2,8 +2,8 @@ Agendacitasmedicas : Validation Results
 =========================================
 
 err = 1, warn = 10, info = 7
-IG Publisher Version: 2.0.21
-Generated Mon Oct 13 23:32:27 CLST 2025. FHIR version 4.0.1 for hl7.fhir.cl.agenda#0.4.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/agenda)
+IG Publisher Version: 2.0.21 Out of date - current version is 2.0.22
+Generated Thu Oct 23 00:03:28 CLST 2025. FHIR version 4.0.1 for hl7.fhir.cl.agenda#0.4.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/agenda)
  Build Errors : 0 / 1 / 0
  /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Appointment-EjemploCita1 : 0 / 0 / 1
  /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/Appointment-EjemploCita2 : 0 / 0 / 1
@@ -93,7 +93,7 @@ WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fh
 == fsh-generated/resources/StructureDefinition-Prevision.json ==
 == fsh-generated/resources/StructureDefinition-RolPrestador.json ==
 == fsh-generated/resources/StructureDefinition-Servicios.json ==
-ERROR: StructureDefinition/Servicios: StructureDefinition.context[0]: The element https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner is not valid
+ERROR: StructureDefinition/Servicios: StructureDefinition.context[0]: The element https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador#Practitioner is not valid
 == fsh-generated/resources/StructureDefinition-SolicitudServicio.json ==
 == fsh-generated/resources/ValueSet-VSCategorias.json ==
 == fsh-generated/resources/ValueSet-VSPrestaciones.json ==

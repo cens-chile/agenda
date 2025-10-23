@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/SolicitudServicio | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:SolicitudServicio |
+| Draft as of 2025-10-23 | *Computable Name*:SolicitudServicio |
 
  
 Este es el perfil de la Solicitud del Servicio 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-SolicitudServicio.cs
   "name" : "SolicitudServicio",
   "title" : "Perfil de la Solicitud del Servicio",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

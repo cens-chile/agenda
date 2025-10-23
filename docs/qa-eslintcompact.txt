@@ -18,7 +18,7 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-PacienteAgenda.json: line 0, col 0, Info - The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended (VALUE)
 /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-PacienteAgenda.json: line 1, col 104285, Info - The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex' (BUSINESSRULE)
 /home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Prestaciones.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Servicios.json: line 0, col 0, Error - The element https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner is not valid (INVALID)
+/home/jano/Projects/CursoIntermedio2025/agenda/fsh-generated/resources/StructureDefinition-Servicios.json: line 0, col 0, Error - The element https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador#Practitioner is not valid (INVALID)
 
 err = 1, warn = 10, info = 7
 IG Publisher Version: 2.0.21

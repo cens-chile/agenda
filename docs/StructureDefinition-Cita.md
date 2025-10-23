@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Cita | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Cita |
+| Draft as of 2025-10-23 | *Computable Name*:Cita |
 
  
 Una reserva de un evento de atención médica entre pacientes, médicos, personas relacionadas y/o dispositivos para una fecha/hora específica. Esto puede resultar en uno o más Encuentros. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Cita.csv), [Excel](S
   "name" : "Cita",
   "title" : "Perfil Cita",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

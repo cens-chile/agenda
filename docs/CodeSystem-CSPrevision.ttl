@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "CS Prevision"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-10-13T23:29:58-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-23T00:01:47-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;

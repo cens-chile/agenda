@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/ValueSet/VSPrevision | *Version*:0.4.0 |
-| Active as of 2025-10-13 | *Computable Name*:VSPrevision |
+| Active as of 2025-10-23 | *Computable Name*:VSPrevision |
 
  
 Previsión del paciente 
@@ -53,7 +53,7 @@ Previsión del paciente
   "title" : "VS Prevision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

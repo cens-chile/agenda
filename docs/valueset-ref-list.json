@@ -26,8 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria",
-      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica "
+      "StructureDefinition-BundleRespuesta.html" : "Bundle Transacción para indicar la respuesta ante una propuesta de cita médica ",
+      "StructureDefinition-BundleSolicitud.html" : "Bundle Transacción para indicar la solicitud de una hora médica ambulatoria"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",

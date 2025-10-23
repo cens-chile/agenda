@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/ImplementationGuide/hl7.fhir.cl.agenda | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Agendacitasmedicas |
+| Draft as of 2025-10-23 | *Computable Name*:Agendacitasmedicas |
 
 ### Contexto
 
@@ -93,7 +93,7 @@ This publication includes IP covered under the following statements.
   "name" : "Agendacitasmedicas",
   "title" : "Guía de Implementación para la gestión de citas médicas enfocado en la APS",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

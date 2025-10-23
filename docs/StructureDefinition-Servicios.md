@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Servicios | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Servicios |
+| Draft as of 2025-10-23 | *Computable Name*:Servicios |
 
 Da el servicio del prestador
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-Servicios.csv), [Exc
   "name" : "Servicios",
   "title" : "Servicio del prestador",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {
@@ -87,7 +87,7 @@ Other representations of profile: [CSV](StructureDefinition-Servicios.csv), [Exc
   "context" : [
     {
       "type" : "element",
-      "expression" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
+      "expression" : "https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador#Practitioner"
     }
   ],
   "type" : "Extension",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Prestador |
+| Draft as of 2025-10-23 | *Computable Name*:Prestador |
 
  
 Perfil del prestador 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Prestador.csv), [Exc
   "name" : "Prestador",
   "title" : "Prestador",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {
@@ -133,23 +133,6 @@ Other representations of profile: [CSV](StructureDefinition-Prestador.csv), [Exc
         "id" : "Practitioner.name.family",
         "path" : "Practitioner.name.family",
         "short" : "1er Apellido Paciente"
-      },
-      {
-        "id" : "Practitioner.name.family.extension:SegundoApellido",
-        "path" : "Practitioner.name.family.extension",
-        "sliceName" : "SegundoApellido",
-        "short" : "2do Apellido Paciente",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
-            ]
-          }
-        ],
-        "mustSupport" : true
       },
       {
         "id" : "Practitioner.name.given",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestaciones | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Prestaciones |
+| Draft as of 2025-10-23 | *Computable Name*:Prestaciones |
 
 Previsones de la APS
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-Prestaciones.csv), [
   "name" : "Prestaciones",
   "title" : "Prestaciones",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {

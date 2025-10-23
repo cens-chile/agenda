@@ -93,7 +93,7 @@ WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fh
 == fsh-generated/resources/StructureDefinition-Prevision.json ==
 == fsh-generated/resources/StructureDefinition-RolPrestador.json ==
 == fsh-generated/resources/StructureDefinition-Servicios.json ==
-ERROR: StructureDefinition/Servicios: StructureDefinition.context[0]: The element https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner is not valid
+ERROR: StructureDefinition/Servicios: StructureDefinition.context[0]: The element https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Prestador#Practitioner is not valid
 == fsh-generated/resources/StructureDefinition-SolicitudServicio.json ==
 == fsh-generated/resources/ValueSet-VSCategorias.json ==
 == fsh-generated/resources/ValueSet-VSPrestaciones.json ==

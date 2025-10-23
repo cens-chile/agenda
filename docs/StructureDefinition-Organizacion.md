@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interoperabilidad.minsal.cl/fhir/ig/agenda/StructureDefinition/Organizacion | *Version*:0.4.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Organizacion |
+| Draft as of 2025-10-23 | *Computable Name*:Organizacion |
 
  
 Este perfil es de la organizacion APS. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Organizacion.csv), [
   "name" : "Organizacion",
   "title" : "Perfil de la Organización",
   "status" : "draft",
-  "date" : "2025-10-13T23:29:58-03:00",
+  "date" : "2025-10-23T00:01:47-03:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [
     {
