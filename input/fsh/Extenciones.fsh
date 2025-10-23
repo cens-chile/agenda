@@ -14,7 +14,7 @@ Extension: Servicios
 Id: Servicios
 Title: "Servicio del prestador"
 Description: "Da el servicio del prestador"
-Context: CorePrestadorCl 
+Context: Prestador 
 
 * value[x] only code
 * valueCode from  VSServicios (required)

@@ -7,8 +7,6 @@ Description: "Perfil del prestador"
 * name 1..1 MS
 * name.given 1..* MS
 * name.family ^short = "1er Apellido Paciente"
-* name.family.extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido named SegundoApellido 0..1 MS
-* name.family.extension[SegundoApellido] ^short = "2do Apellido Paciente"
 
 * qualification 1..*
 * qualification[TituloProfesional] ^short = "Especificación de los Títulos o TituloProfesionalificados Profesionales que tiene el Prestador."
